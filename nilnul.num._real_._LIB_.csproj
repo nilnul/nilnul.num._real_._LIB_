@@ -1,0 +1,1893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2B2C72B-7950-468D-A024-A65B000F9F96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.num.real</RootNamespace>
+    <AssemblyName>nilnul.num._real_._LIB_</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PreferChinese|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\PreferChinese\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_PreferChinese|AnyCPU'">
+    <OutputPath>bin\Release_PreferChinese\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Hbue40|AnyCPU'">
+    <OutputPath>bin\Hbue40\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Symbols4Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Symbols4Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Symbol|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Symbol\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Symbol|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Symbol\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Nuget|AnyCPU'">
+    <OutputPath>bin\Nuget\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <LangVersion>default</LangVersion>
+    <!--<LangVersion>latest</LangVersion>-->
+    <!--<LangVersion>preview</LangVersion>-->
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Nuget|AnyCPU'">
+    <OutputPath>bin\Nuget\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <!--<LangVersion>7.3</LangVersion>-->
+    <!--<LangVersion>default</LangVersion>-->
+    <LangVersion>latest</LangVersion>
+    <!--<LangVersion>preview</LangVersion>-->
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Nuget|AnyCPU'">
+    <OutputPath>bin\Nuget\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <!--<LangVersion>7.3</LangVersion>-->
+    <!--<LangVersion>default</LangVersion>-->
+    <LangVersion>latest</LangVersion>
+    <!--<LangVersion>preview</LangVersion>-->
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>t.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.collection_._discrete_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230">
+      <HintPath>..\_TEST_(Git\packages\nilnul.collection_._discrete_._LIB_.1.1.220728.140313\lib\net48\nilnul.collection_._discrete_._LIB_.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nilnul.num._integer_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\nilnul.num._integer_._LIB_.1.1.220905.105721\lib\net481\nilnul.num._integer_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.num._quotient_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\nilnul.num._quotient_._LIB_.1.1.220926.131208\lib\net481\nilnul.num._quotient_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._bit_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\nilnul._bit_._LIB_.1.1.220822.32314\lib\net48\nilnul._bit_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._character_._LIB_, Version=2.1.8272.35271, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\nilnul._character_._LIB_.2.1.220825.113426\lib\net481\nilnul._character_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._num_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\nilnul._num_._LIB_.1.1.220826.15831\lib\net481\nilnul._num_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._num_._LINQ_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\nilnul._num_._LINQ_.1.1.220825.155237\lib\net481\nilnul._num_._LINQ_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._obj_._LIB_, Version=1.2.0.0, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\nilnul._obj_._LIB_.1.2.220905.122106\lib\net481\nilnul._obj_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._rel_._LIB_, Version=1.2.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\nilnul._rel_._LIB_.1.2.220817.152548\lib\net48\nilnul._rel_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._set_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\nilnul._set_._LIB_.1.1.220905.140119\lib\net481\nilnul._set_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._txt_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\nilnul._txt_._LIB_.1.1.220908.84230\lib\net481\nilnul._txt_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="_nilnul_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\_nilnul_._LIB_.1.1.220819.143251\lib\net481\_nilnul_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="_nilnul_._LINQ_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\_TEST_(Git\packages\_nilnul_._LINQ_.1.1.220819.143032\lib\net481\_nilnul_._LINQ_.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="%28border\border\lower_\Open.cs" />
+    <Compile Include="%28border\border\upper_\Open.cs" />
+    <Compile Include="%28border\border\upper_\Closed.cs" />
+    <Compile Include="%28border\border\lower_\Closed.cs" />
+    <Compile Include="%28border\border_\Upper.cs" />
+    <Compile Include="%28border\border_\Lower.cs" />
+    <Compile Include="%28border\border_\Lower0upper.cs" />
+    <Compile Include="%28border\_border_\Has.cs" />
+    <Compile Include="%28bound\IBound.cs" />
+    <Compile Include="%28expr\ExprI - Copy.cs" />
+    <Compile Include="%28expr\%28retiring\ExprI.cs" />
+    <Compile Include="%28expr\IExpr.cs" />
+    <Compile Include="be\Anto4dbl.cs" />
+    <Compile Include="be\Anto.cs" />
+    <Compile Include="be\anto_\NewFolder1\Anto.cs" />
+    <Compile Include="be_\AboutNil4Dbl.cs" />
+    <Compile Include="be_\nily_\Thousandth4dbl.cs" />
+    <Compile Include="be_\nil\anto_\ByInjected4Dbl.cs" />
+    <Compile Include="be_\nil\Anto4dbl.cs" />
+    <Compile Include="bound_\closed\re\Complement4dbl.cs" />
+    <Compile Include="bound_\closed\Re4dblI.cs" />
+    <Compile Include="bound_\closed\ReI.cs" />
+    <Compile Include="bound_\closed\re\complement_\ReNeo4Dbl.cs" />
+    <Compile Include="bound_\closed\re_\Disjoint4dbl.cs" />
+    <Compile Include="bound_\closed\re_\Intersected4dbl.cs" />
+    <Compile Include="bound_\closed\re_\Include.cs" />
+    <Compile Include="bound_\closed\re_\sup_\Proper.cs" />
+    <Compile Include="bound_\closed_\CenteredDbl.cs" />
+    <Compile Include="bound_\closed_\neighbor_\CenteredDbl.cs" />
+    <Compile Include="bound_\INormal.cs" />
+    <Compile Include="bound_\IUnial.cs" />
+    <Compile Include="bound_\normal_\clopen_\IPotent.cs" />
+    <Compile Include="bound_\normal_\clopen_\Proportion4dbl_clopen.cs" />
+    <Compile Include="bound_\normal_\openClose_\Partial4dbl_openClose.cs" />
+    <Compile Include="bound_\unial_\Clopen4dbl.cs" />
+    <Compile Include="bound_\unial_\Parture4dbl.cs" />
+    <Compile Include="bound_\unial_\Open4dbl.cs" />
+    <Compile Include="bound_\unial_\Closed4dbl.cs" />
+    <Compile Include="co\Comp4dbl.cs" />
+    <Compile Include="co\Re4dblI.cs" />
+    <Compile Include="expr_\%28retiring\CallI.cs" />
+    <Compile Include="expr_\algebraic\frac\matrix_\square\cel\remnant\minor\_CofactorX.cs" />
+    <Compile Include="expr_\algebraic\frac\matrix_\square\cel\remnant\_MinorX.cs" />
+    <Compile Include="expr_\algebraic\frac\matrix\cel\_RemnantX.cs" />
+    <Compile Include="expr_\algebraic\frac\matrix_\square\_DeterminantX.cs" />
+    <Compile Include="expr_\algebraic\frac\matrix_\square_\secondary\_DeterminantX.cs" />
+    <Compile Include="expr_\algebraic\frac\op_\BinaryI.cs" />
+    <Compile Include="expr_\algebraic\frac\op_\binary_\Multi.cs" />
+    <Compile Include="expr_\algebraic\frac\op_\binary_\multi\Cumulator.cs" />
+    <Compile Include="expr_\algebraic\frac\op_\binary_\multi\cumulator\Cumulate.cs" />
+    <Compile Include="expr_\algebraic\frac\op_\binary_\Add.cs" />
+    <Compile Include="expr_\algebraic\frac\op_\binary_\add\Cumulator.cs" />
+    <Compile Include="expr_\algebraic\frac\op_\binary_\add\cumulator\Cumulator.cs" />
+    <Compile Include="expr_\algebraic\frac\phrase_\NilEmpty.cs" />
+    <Compile Include="expr_\algebraic\frac\str\Extensions.cs" />
+    <Compile Include="expr_\algebraic\frac\str\ToI.cs" />
+    <Compile Include="expr_\algebraic\frac\str\to_\Scalar.cs" />
+    <Compile Include="expr_\algebraic\frac\str\to_\scalar_\Variance.cs" />
+    <Compile Include="expr_\algebraic\ICalc.cs" />
+    <Compile Include="expr_\algebraic\matrix\cel\_RemnantX.cs" />
+    <Compile Include="expr_\algebraic\matrix_\square\cel\remnant\minor\_CofactorX.cs" />
+    <Compile Include="expr_\algebraic\matrix_\square\cel\remnant\_MinorX.cs" />
+    <Compile Include="expr_\algebraic\matrix_\square\_DeterminantX.cs" />
+    <Compile Include="expr_\algebraic\matrix_\square_\secondary\_DeterminantX.cs" />
+    <Compile Include="expr_\algebraic\matrix_\square_\Vandermonde.cs" />
+    <Compile Include="expr_\algebraic\matrix_\square_\vandermonde\_DeterminantX.cs" />
+    <Compile Include="expr_\algebraic\phrase_\NilEmpty.cs" />
+    <Compile Include="expr_\algebraic\phrase_\nilEmpty_\ParenOnNeed.cs" />
+    <Compile Include="expr_\algebraic\phrase_\ParenOnNeed.cs" />
+    <Compile Include="expr_\algebraic\FracI.cs" />
+    <Compile Include="expr_\algebraic\frac\Eq.cs" />
+    <Compile Include="expr_\algebraic\frac\EqI.cs" />
+    <Compile Include="expr_\algebraic\IFrac.cs" />
+    <Compile Include="expr_\algebraic\op_\BinaryI.cs" />
+    <Compile Include="expr_\algebraic\op_\binary_\Multi.cs" />
+    <Compile Include="expr_\algebraic\op_\binary_\multi\Cumulator.cs" />
+    <Compile Include="expr_\algebraic\op_\binary_\multi\cumulator\Cumulate.cs" />
+    <Compile Include="expr_\algebraic\op_\binary_\Add.cs" />
+    <Compile Include="expr_\algebraic\op_\binary_\add\Cumulator.cs" />
+    <Compile Include="expr_\algebraic\op_\binary_\add\cumulator\Cumulate.cs" />
+    <Compile Include="expr_\algebraic\Ponent.cs" />
+    <Compile Include="expr_\algebraic\pons\Product.cs" />
+    <Compile Include="expr_\algebraic\pons\prod\Eq.cs" />
+    <Compile Include="expr_\algebraic\pons\prod\scaleds\Sum.cs" />
+    <Compile Include="expr_\algebraic\pons\prod\scaleds\sum\Eq.cs" />
+    <Compile Include="expr_\algebraic\pons\prod\scaleds\sum\Frac.cs" />
+    <Compile Include="expr_\algebraic\pons\prod\Scaled.cs" />
+    <Compile Include="expr_\algebraic\pons\prod\scaleds\sum\frac\Eq.cs" />
+    <Compile Include="expr_\algebraic\pon\Eq.cs" />
+    <Compile Include="expr_\algebraic\str\Extensions.cs" />
+    <Compile Include="expr_\algebraic\str\ToI.cs" />
+    <Compile Include="expr_\algebraic\str\to_\Scalar.cs" />
+    <Compile Include="expr_\algebraic\str\to_\scalar_\Variance.cs" />
+    <Compile Include="expr_\algebraic\_frac\pows\Product.cs" />
+    <Compile Include="expr_\algebraic\_frac\pows\prod\Scaled.cs" />
+    <Compile Include="expr_\algebraic_\ITrivariate.cs" />
+    <Compile Include="expr_\algebraic_\Bivariate.cs" />
+    <Compile Include="expr_\algebraic_\Multivariate.cs" />
+    <Compile Include="expr_\algebraic_\IPolynomial.cs" />
+    <Compile Include="expr_\var_\IConstrained.cs" />
+    <Compile Include="expr_\_algebraic\pows\prod\re_\Multiplic.cs" />
+    <Compile Include="expr_\algebraic\Frac.cs" />
+    <Compile Include="expr_\algebraic\_frac\Pow.cs" />
+    <Compile Include="expr_\_algebraic\pows\prod\scaled\re_\Multiplic.cs" />
+    <Compile Include="expr_\_algebraic\pows\Product_ofPositivePow.cs" />
+    <Compile Include="expr_\_algebraic\pows\prod\Eq.cs" />
+    <Compile Include="expr_\_algebraic\pows\prod\scaled\re_\Mergible.cs" />
+    <Compile Include="expr_\algebraic\Eq.cs" />
+    <Compile Include="expr_\algebraic\op_\binary_\_SubtractX.cs" />
+    <Compile Include="expr_\algebraic\op_\binary_\_AddX.cs" />
+    <Compile Include="expr_\algebraic\op_\unary_\Negate.cs" />
+    <Compile Include="expr_\Algebraic.cs" />
+    <Compile Include="expr_\_algebraic\pows\prod\Scaled_powIndexPositive.cs" />
+    <Compile Include="expr_\_algebraic\PowX.cs" />
+    <Compile Include="expr_\_algebraic\pow\Eq.cs" />
+    <Compile Include="expr_\_algebraic\Pow_indexPositive.cs" />
+    <Compile Include="expr_\_algebraic\Pow.cs" />
+    <Compile Include="expr_\_algebraic\pows\Product.cs" />
+    <Compile Include="expr_\_algebraic\pows\prod\Scaled.cs" />
+    <Compile Include="expr_\_algebraic\pows\prod\scaleds\Sum.cs" />
+    <Compile Include="expr_\algebraic_\Univariate.cs" />
+    <Compile Include="expr_\call_\%28retiring\Nary - Copy.cs" />
+    <Compile Include="expr_\IAlgebraic.cs" />
+    <Compile Include="expr_\ICall.cs" />
+    <Compile Include="expr_\IPoly.cs" />
+    <Compile Include="expr_\Polynomial.cs" />
+    <Compile Include="expr_\AlgebraicI.cs" />
+    <Compile Include="expr_\Var.cs" />
+    <Compile Include="expr_\VarI.cs" />
+    <Compile Include="expr_\var_\Fixed.cs" />
+    <Compile Include="expr_\var_\fixed_\Nil.cs" />
+    <Compile Include="expr_\var_\fixed_\One.cs" />
+    <Compile Include="Extensions4dblX.cs" />
+    <Compile Include="ext\IOp - Copy.cs" />
+    <Compile Include="ext\op_\Binary4dblI.cs" />
+    <Compile Include="ext\op_\binary_\Commutative4dblI.cs" />
+    <Compile Include="ext\op_\binary_\CommutativeI.cs" />
+    <Compile Include="ext\op_\binary_\Min.cs" />
+    <Compile Include="ext\op_\binary_\min\Cumulator4dbl.cs" />
+    <Compile Include="ext\op_\binary_\min\Cumulator.cs" />
+    <Compile Include="expr_\poly\co\Equation.cs" />
+    <Compile Include="expr_\poly\co\equation\Solution.cs" />
+    <Compile Include="expr_\poly\co\equation\solution_\Diophantine.cs" />
+    <Compile Include="expr_\poly_\Quadratic.cs" />
+    <Compile Include="expr_\poly_\Monic.cs" />
+    <Compile Include="%28stream\Stream4dblI.cs" />
+    <Compile Include="%28stream\stream_\SliderI - Copy.cs" />
+    <Compile Include="bound_\Clopen.cs" />
+    <Compile Include="bound_\OpenClose.cs" />
+    <Compile Include="bound_\Open4dbl.cs" />
+    <Compile Include="bound_\ClosedDbl.cs" />
+    <Compile Include="bound_\closed_\Noneg.cs" />
+    <Compile Include="bound_\closed_\Spanned4dbl.cs" />
+    <Compile Include="bound_\NonnegDbl.cs" />
+    <Compile Include="bound_\nonneg_\LtOne.cs" />
+    <Compile Include="bound_\nonneg_\LeOne.cs" />
+    <Compile Include="bound_\Unital.cs" />
+    <Compile Include="bound_\normal_\clopen_\NewFolder1\Partial.cs" />
+    <Compile Include="bound_\normal_\open_\Portion.cs" />
+    <Compile Include="bound_\normal_\openClose_\NewFolder1\Proportion.cs" />
+    <Compile Include="bound_\normal_\close_\Prob.cs" />
+    <Compile Include="co\alesce_\Avg.cs" />
+    <Compile Include="co\alesce_\add\Cumulator4float.cs" />
+    <Compile Include="co\Band4floatI.cs" />
+    <Compile Include="co\alesce_\Add.cs" />
+    <Compile Include="co_\starT_\positive\pow\ed_\ExpInvertedPowSelf.cs" />
+    <Compile Include="expr_\call_\poly_\Bernstein.cs" />
+    <Compile Include="ext\bound_\Bared.cs" />
+    <Compile Include="ext\IOp.cs" />
+    <Compile Include="ext\op_\Binary.cs" />
+    <Compile Include="ext\op_\binary_\Divide.cs" />
+    <Compile Include="ext\op_\binary_\min\cumulator\Cumulate.cs" />
+    <Compile Include="ext\op_\binary_\Multi.cs" />
+    <Compile Include="ext\op_\binary_\Minus.cs" />
+    <Compile Include="ext\op_\binary_\Add.cs" />
+    <Compile Include="ext\op_\Unary.cs" />
+    <Compile Include="ext\op_\unary_\Invert.cs" />
+    <Compile Include="ext\op_\unary_\Neg.cs" />
+    <Compile Include="func_\BinaryI.cs" />
+    <Compile Include="%28stream\stream_\bounded_\cauchy_\UnitalPowUnital.cs" />
+    <Compile Include="IProof.cs" />
+    <Compile Include="IRange.cs" />
+    <Compile Include="nilnul0\num\IReal.cs" />
+    <Compile Include="nilnul0\num\reals\ExtensionsX.cs" />
+    <Compile Include="nilnul0\num\real_\IApproach.cs" />
+    <Compile Include="nilnul0\num\real_\IChoice.cs" />
+    <Compile Include="op_\Ternary4dblI.cs" />
+    <Compile Include="op_\binary_\IDif.cs" />
+    <Compile Include="op_\ternary_\Clamp.cs" />
+    <Compile Include="op_\unary_\IPonent.cs" />
+    <Compile Include="str\be_\Axial.cs" />
+    <Compile Include="str\be_\Unial.cs" />
+    <Compile Include="str\IArity.cs" />
+    <Compile Include="str\IDeparture.cs" />
+    <Compile Include="str\IVariance.cs" />
+    <Compile Include="str\op_\unary_\_ScaleX.cs" />
+    <Compile Include="str\op_\unary_\_SquareX.cs" />
+    <Compile Include="str\Reals.cs" />
+    <Compile Include="str\to_\scalar_\Aggregate4decimal.cs" />
+    <Compile Include="str\to_\scalar_\Aggregate4float.cs" />
+    <Compile Include="str\to_\scalar_\Aggregate4dbl.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\aggregate_\SquareSum.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\Norm.cs" />
+    <Compile Include="Be4floatI.cs" />
+    <Compile Include="BeDblI.cs" />
+    <Compile Include="BeI.cs" />
+    <Compile Include="be\%28retiring\NewFolder1\Vow.cs" />
+    <Compile Include="be\%28retiring\Vow - Copy.cs" />
+    <Compile Include="be\anto_\BeNeo.cs" />
+    <Compile Include="be\En4.cs" />
+    <Compile Include="be\En - Copy.cs" />
+    <Compile Include="be\en_\BeDefaulted - Copy.cs" />
+    <Compile Include="be\en_\BeDefaulted.cs" />
+    <Compile Include="be\Vow4float.cs" />
+    <Compile Include="be\VowDbl.cs" />
+    <Compile Include="be\Vow.cs" />
+    <Compile Include="be\En.cs" />
+    <Compile Include="%28border\%28dbl\Border - Copy.cs" />
+    <Compile Include="%28border\border\AsUpper.cs" />
+    <Compile Include="%28border\border\AsLower.cs" />
+    <Compile Include="%28border\border\Duo1 - Copy.cs" />
+    <Compile Include="%28bound\BoundX.cs" />
+    <Compile Include="%28bound\BoundDbl.cs" />
+    <Compile Include="%28bound\Bound1.cs" />
+    <Compile Include="%28bound\BoundI.cs" />
+    <Compile Include="%28bound\bound\BeI.cs" />
+    <Compile Include="%28bound\bound\be\En.cs" />
+    <Compile Include="%28bound\bound\be\en_\BeDefault.cs" />
+    <Compile Include="%28bound\bound\be_\Spanned.cs" />
+    <Compile Include="%28bound\bound\be_\spanned\En.cs" />
+    <Compile Include="bound_\closed\BeI.cs" />
+    <Compile Include="bound_\closed\be_\Spanned.cs" />
+    <Compile Include="bound_\closed_\Based.cs" />
+    <Compile Include="bound_\CenteredDbl.cs" />
+    <Compile Include="bound_\Centered.cs" />
+    <Compile Include="bound_\centered_\_AcuteDblX.cs" />
+    <Compile Include="bound_\centered_\Acute.cs" />
+    <Compile Include="bound_\Closed.cs" />
+    <Compile Include="bound_\closed_\Spanned.cs" />
+    <Compile Include="bound_\closed_\spanned\VsReal.cs" />
+    <Compile Include="bound_\closed_\spanned\vsReal_\trich_\Gt.cs" />
+    <Compile Include="bound_\closed_\spanned\vsReal_\trich_\Ge.cs" />
+    <Compile Include="bound_\closed_\spanned\vsReal_\Trich.cs" />
+    <Compile Include="bound_\Positive.cs" />
+    <Compile Include="bound_\Nonneg.cs" />
+    <Compile Include="bound_\rotation_\GtNegPi.cs" />
+    <Compile Include="bound_\rotation_\GeNegPi.cs" />
+    <Compile Include="bound_\rotation_\GeNegQuarter.cs" />
+    <Compile Include="bound_\rotation_\GtNegQuarter.cs" />
+    <Compile Include="bound_\rotation_\Positive.cs" />
+    <Compile Include="bound_\rotation_\Nonneg.cs" />
+    <Compile Include="bound_\Spanned.cs" />
+    <Compile Include="bound_\spanned_\disengaged\OuterOvDiameter.cs" />
+    <Compile Include="bound_\spanned_\disengaged\InnerOvDiameter.cs" />
+    <Compile Include="bound_\spanned_\disengaged\InnerOvCols.cs" />
+    <Compile Include="bound_\spanned_\Dissected.cs" />
+    <Compile Include="bound_\spanned_\Disengaged.cs" />
+    <Compile Include="nilnul0\num\real_\dbl\to_\_data\DblLongUnion.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\Be.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\be\Vow.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\be\vow_\BeDefault.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\be_\ge\Vow4dbl.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\be_\ge\vow\Ee.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\be_\Lt4dbl.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\be_\Le4dbl.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\be_\Gt4dbl.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\be_\Ge4dbl.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\Vow.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\vow\Ee.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\co\vow\ee_\VowDefault.cs" />
+    <Compile Include="nilnul0\num\real_\quotient_\integer_\Binar.cs" />
+    <Compile Include="nilnul0\num\real_\quotient_\integer_\Dec.cs" />
+    <Compile Include="nilnul0\num\real_\quotient_\Unital.cs" />
+    <Compile Include="nilnul0\obj\measure\be_\Positive.cs" />
+    <Compile Include="nilnul0\obj\measure\be_\positive\vow\Ee.cs" />
+    <Compile Include="nilnul0\obj\measure\Signed%28class.cs" />
+    <Compile Include="nilnul0\obj\measure\Signed4dbl.cs" />
+    <Compile Include="nilnul0\obj\measure\Signed4dblI.cs" />
+    <Compile Include="nilnul0\obj\measure\_signed_\Quantity4dblI.cs" />
+    <Compile Include="nilnul0\obj\measure\_signed_\QuantityI.cs" />
+    <Compile Include="nilnul0\obj\measure\_signed_\ToStd.cs" />
+    <Compile Include="nilnul0\obj\measure\_signed_\ToStd4Dbl.cs" />
+    <Compile Include="nilnul0\obj\measure_\Positive.cs" />
+    <Compile Include="nilnul0\obj\metric_\Linear.cs" />
+    <Compile Include="nilnul0\obj\measure\SignedI.cs" />
+    <Compile Include="nilnul0\obj\metric_\linear_\Anchored.cs" />
+    <Compile Include="nilnul0\obj\_measure_\Unit4dblI.cs" />
+    <Compile Include="IVec.cs" />
+    <Compile Include="nuly\comp_\NulMin4Dbl.cs" />
+    <Compile Include="nuly\comp_\NulMax4Dbl.cs" />
+    <Compile Include="op_\binary_\add\Cumulator.cs" />
+    <Compile Include="op_\binary\CumulatorI.cs" />
+    <Compile Include="op_\binary_\add\cumulator\Cumulate.cs" />
+    <Compile Include="op_\binary_\multi\Cumulator1.cs" />
+    <Compile Include="op_\binary_\multi\cumulator\Cumulate.cs" />
+    <Compile Include="op_\Unary.cs" />
+    <Compile Include="op_\Unary4db.cs" />
+    <Compile Include="op_\unary\Recur.cs" />
+    <Compile Include="op_\unary\recur\Slider4dbl.cs" />
+    <Compile Include="op_\unary\recur\slider_\OpDefault.cs" />
+    <Compile Include="op_\unary\recur_\OpDefault.cs" />
+    <Compile Include="op_\unary_\Bisect.cs" />
+    <Compile Include="op_\unary_\bisect\Recur.cs" />
+    <Compile Include="op_\unary_\IPoly.cs" />
+    <Compile Include="op_\unary_\sqrt\Of.cs" />
+    <Compile Include="op_\unary_\_PolyX.cs" />
+    <Compile Include="re_\approx_\ByInjected.cs" />
+    <Compile Include="re_\approx_\OnBeNil.cs" />
+    <Compile Include="re_\approx_\Ratio.cs" />
+    <Compile Include="Sign4dbl.cs" />
+    <Compile Include="str\Be4dblI.cs" />
+    <Compile Include="str\be\Vow4dbl.cs" />
+    <Compile Include="str\be\vow_\BeNeo.cs" />
+    <Compile Include="str\be_\axial_\unial_\Negative.cs" />
+    <Compile Include="str\be_\axial_\unial_\negative\Vow4dbl.cs" />
+    <Compile Include="str\be_\axial_\unial_\negative\vow\Ee4dbl.cs" />
+    <Compile Include="str\be_\axial_\Unitary.cs" />
+    <Compile Include="str\be_\axial_\unial\Vow4dbl.cs" />
+    <Compile Include="str\be_\axial_\unial\vow\Ee4dbl.cs" />
+    <Compile Include="str\be_\axial_\unial_\Positive.cs" />
+    <Compile Include="str\be_\axial_\unial_\positive\Vow4dbl.cs" />
+    <Compile Include="str\be_\axial_\unial_\positive\vow\Ee4dbl.cs" />
+    <Compile Include="str\to_\Scalar.cs" />
+    <Compile Include="str\to_\scalar_\Norm.cs" />
+    <Compile Include="str\to_\scalar_\NewFolder1\SquareSum - Copy.cs" />
+    <Compile Include="str\to_\scalar_\Sum.cs" />
+    <Compile Include="str\to_\scalar_\_SquareSumX.cs" />
+    <Compile Include="str\op_\unary_\_sum\Ret.cs" />
+    <Compile Include="str\to_\_scalar_\OfParams4RealI.cs" />
+    <Compile Include="str\to_\_scalar_\OfParams.cs" />
+    <Compile Include="str\Vow4dbl.cs" />
+    <Compile Include="str\vow\Ee4dbl.cs" />
+    <Compile Include="str\vow\ee_\VowNeo4Dbl.cs" />
+    <Compile Include="str_\axisal_\Std.cs" />
+    <Compile Include="str_\axisal_\unital_\Neg4dbl.cs" />
+    <Compile Include="str_\axisal_\unital_\Std.cs" />
+    <Compile Include="tro\_ExtensionsX.cs" />
+    <Compile Include="tro_\AllNil.cs" />
+    <Compile Include="vec\be_\axial_\Unitary.cs" />
+    <Compile Include="vec\be_\IUnial.cs" />
+    <Compile Include="vec\be_\IAxial.cs" />
+    <Compile Include="vec\co\IInnerProduct.cs" />
+    <Compile Include="vec\co\NewFolder1\InnerProduct - Copy.cs" />
+    <Compile Include="vec\IArity.cs" />
+    <Compile Include="vec\IDeparture.cs" />
+    <Compile Include="vec\IStr.cs" />
+    <Compile Include="vec\IVariance.cs" />
+    <Compile Include="vec\op_\binary_\Add.cs" />
+    <Compile Include="vec\set\LinearSpan.cs" />
+    <Compile Include="vec\str\accumulate_\LinearCombinate.cs" />
+    <Compile Include="vec\str\IBasis.cs" />
+    <Compile Include="vec_\axial_\unial_\std\of_\LengthIndex.cs" />
+    <Compile Include="vec_\Axis.cs" />
+    <Compile Include="vec_\axial_\Nonnil.cs" />
+    <Compile Include="vec_\axial_\Unitary.cs" />
+    <Compile Include="vec_\IPenta.cs" />
+    <Compile Include="vec_\Nino4dbl.cs" />
+    <Compile Include="vec_\IUnial.cs" />
+    <Compile Include="vec_\axial_\unial_\INegCanon.cs" />
+    <Compile Include="vec_\axial_\unial_\IStd.cs" />
+    <Compile Include="vec_\IQuod.cs" />
+    <Compile Include="vec_\quad_\axial_\unial_\Pos.cs" />
+    <Compile Include="vec_\quad\Be4dblI.cs" />
+    <Compile Include="vec_\quad\be\Vow4dbl.cs" />
+    <Compile Include="vec_\quad\be\vow_\BeNeo4Dbl.cs" />
+    <Compile Include="vec_\quad\be_\Nonnil.cs" />
+    <Compile Include="vec_\quad\be_\nonnil\Vow4dbl.cs" />
+    <Compile Include="vec_\quad\be_\nonnil\vow\Ee4dbl.cs" />
+    <Compile Include="vec_\quad\Departure.cs" />
+    <Compile Include="vec_\quad\To4dblI.cs" />
+    <Compile Include="vec_\quad\to_\Scalar.cs" />
+    <Compile Include="vec_\quad\Variance.cs" />
+    <Compile Include="vec_\quad\Vow4dblI.cs" />
+    <Compile Include="vec_\quad\vow\Ee4dbl.cs" />
+    <Compile Include="vec_\quad\vow\ee_\VowNeo4Dbl.cs" />
+    <Compile Include="vec_\ITro.cs" />
+    <Compile Include="vec_\co\Be4dblI.cs" />
+    <Compile Include="vec_\co\be\Vow4dbl.cs" />
+    <Compile Include="vec_\co\be\vow_\BeNeo4Dbl.cs" />
+    <Compile Include="vec_\co\be_\Nonnil.cs" />
+    <Compile Include="vec_\co\be_\nonnil\Vow4dbl.cs" />
+    <Compile Include="vec_\co\be_\nonnil\vow\Ee4dbl.cs" />
+    <Compile Include="vec_\co\Departure.cs" />
+    <Compile Include="vec_\co\To4dblI.cs" />
+    <Compile Include="vec_\co\to_\Scalar.cs" />
+    <Compile Include="vec_\co\Variance.cs" />
+    <Compile Include="vec_\co\Vow4dblI.cs" />
+    <Compile Include="vec_\co\vow\Ee4dbl.cs" />
+    <Compile Include="vec_\co\vow\ee_\VowNeo4Dbl.cs" />
+    <Compile Include="vec_\tro\Be4dblI.cs" />
+    <Compile Include="vec_\tro\be\Vow4dbl.cs" />
+    <Compile Include="vec_\tro\be\vow_\BeNeo4Dbl.cs" />
+    <Compile Include="vec_\tro\be_\Nonnil.cs" />
+    <Compile Include="vec_\tro\be_\nonnil\Vow4dbl.cs" />
+    <Compile Include="vec_\tro\be_\nonnil\vow\Ee4dbl.cs" />
+    <Compile Include="vec_\tro\To4dblI.cs" />
+    <Compile Include="vec_\tro\to_\Scalar.cs" />
+    <Compile Include="vec_\tro\Departure.cs" />
+    <Compile Include="vec_\tro\Variance.cs" />
+    <Compile Include="vec_\tro\Vow4dblI.cs" />
+    <Compile Include="vec_\tro\vow\Ee4dbl.cs" />
+    <Compile Include="vec_\tro\vow\ee_\VowNeo4Dbl.cs" />
+    <Compile Include="vec_\tro_\Homogeneous.cs" />
+    <Compile Include="vec_\tro_\unital_\axisal_\anti_\Eks.cs" />
+    <Compile Include="vec_\tro_\unital_\axisal_\anti_\Wai4dbl.cs" />
+    <Compile Include="vec_\tro_\unital_\axisal_\anti_\Zed4dbl.cs" />
+    <Compile Include="vec_\tro_\unital_\axisal_\Eks.cs" />
+    <Compile Include="vec_\tro_\unital_\axisal_\Wai4dbl.cs" />
+    <Compile Include="vec_\tro_\unital_\axisal_\Zed4dbl.cs" />
+    <Compile Include="vec_\unial_\Axisal.cs" />
+    <Compile Include="vec_\unial_\IAxisal.cs" />
+    <Compile Include="vec_\unial_\axial_\IAntiCanon.cs" />
+    <Compile Include="vec_\Uno4dbl.cs" />
+    <Compile Include="vec_\Quod4dbl.cs" />
+    <Compile Include="vec_\Co4dbl.cs" />
+    <Compile Include="vec_\Tro4dbl.cs" />
+    <Compile Include="vec_\_TroX.cs" />
+    <Compile Include="_bound\Lower - Copy.cs" />
+    <Compile Include="_bound\LowerUpper - Copy.cs" />
+    <Compile Include="_bound\LowerUpper.cs" />
+    <Compile Include="_bound\lowerUpper\Be - Copy.cs" />
+    <Compile Include="_bound\lowerUpper\Be.cs" />
+    <Compile Include="_bound\lowerUpper\be\En.cs" />
+    <Compile Include="_bound\lowerUpper\be\en_\BeDefault.cs" />
+    <Compile Include="_bound\lowerUpper\be_\dwelt\En.cs" />
+    <Compile Include="_bound\lowerUpper\be_\Nonempty - Copy.cs" />
+    <Compile Include="_bound\lowerUpper\be_\Singleton - Copy.cs" />
+    <Compile Include="_bound\lowerUpper\be_\Singleton.cs" />
+    <Compile Include="_bound\lowerUpper\be_\Dwelt.cs" />
+    <Compile Include="_bound\lowerUpper\be_\Spanned.cs" />
+    <Compile Include="_bound\upper\Be.cs" />
+    <Compile Include="_bound\upper\be_\Has.cs" />
+    <Compile Include="_bound\lower\Be.cs" />
+    <Compile Include="_bound\lower\be_\Has.cs" />
+    <Compile Include="_bound\Upper - Copy.cs" />
+    <Compile Include="%28bound\_bound_\Borders.cs" />
+    <Compile Include="%28bound\_bound_\CenterI.cs" />
+    <Compile Include="%28bound\_bound_\DiameterI.cs" />
+    <Compile Include="%28bound\_bound_\UpperI.cs" />
+    <Compile Include="%28bound\_bound_\LowerI.cs" />
+    <Compile Include="co\BandDblI.cs" />
+    <Compile Include="co\BandI.cs" />
+    <Compile Include="co\alesce_\MaxDbl.cs" />
+    <Compile Include="co\alesce_\Norm.cs" />
+    <Compile Include="co_\starT_\positive_\NeOne.cs" />
+    <Compile Include="co_\starT_\positive_\neOne_\enD_\positive\Log.cs" />
+    <Compile Include="co_\starT_\positive_\neOne_\enD_\positive\_log\_ofPositiveQuotients\Ret.cs" />
+    <Compile Include="co\alesce_\_SquareSumX.cs" />
+    <Compile Include="co\alesce_\MinDbl.cs" />
+    <Compile Include="CoDbl.cs" />
+    <Compile Include="%28eq\Eq - Copy.cs" />
+    <Compile Include="%28expr\Exprs.cs" />
+    <Compile Include="%28expr\expr\Co.cs" />
+    <Compile Include="%28expr\expr\ReI.cs" />
+    <Compile Include="%28expr\expr\Replace.cs" />
+    <Compile Include="%28expr\expr\re\Call.cs" />
+    <Compile Include="%28expr\expr\re\call_\Eq.cs" />
+    <Compile Include="%28expr\expr\re\_call_\ReI.cs" />
+    <Compile Include="%28expr\expr\re_\Equiv.cs" />
+    <Compile Include="expr_\CallI.cs" />
+    <Compile Include="expr_\call_\aggregated_\Prod.cs" />
+    <Compile Include="expr_\call_\aggregated_\Sum.cs" />
+    <Compile Include="expr_\call_\unary_\Poly.cs" />
+    <Compile Include="expr_\call_\poly_\Chromatic.cs" />
+    <Compile Include="expr_\plain_\call_\Binary.cs" />
+    <Compile Include="expr_\plain_\call_\Nary.cs" />
+    <Compile Include="expr_\plain_\call_\Unary.cs" />
+    <Compile Include="expr_\PolynomialI.cs" />
+    <Compile Include="expr_\_call_\ArgArg1I.cs" />
+    <Compile Include="ext\border_\Upper.cs" />
+    <Compile Include="ext\border_\Lower.cs" />
+    <Compile Include="ext\border_\lower\re_\Subset.cs" />
+    <Compile Include="ext\border_\lower\re_\Superset.cs" />
+    <Compile Include="ext\border_\upper\re_\Subset.cs" />
+    <Compile Include="ext\border_\upper\re_\Superset.cs" />
+    <Compile Include="ext\ReI.cs" />
+    <Compile Include="ext\re_\Gt.cs" />
+    <Compile Include="ext\re_\Ge.cs" />
+    <Compile Include="ext\re_\Lt.cs" />
+    <Compile Include="ext\re_\Le.cs" />
+    <Compile Include="%28set\Set.cs" />
+    <Compile Include="%28stream\stream\Co.cs" />
+    <Compile Include="%28stream\stream\co\Alesce.cs" />
+    <Compile Include="%28stream\stream\Initials.cs" />
+    <Compile Include="%28stream\stream\stock_\Initials.cs" />
+    <Compile Include="%28stream\stream_\BoundedI.cs" />
+    <Compile Include="%28stream\stream_\bounded\Be.cs" />
+    <Compile Include="%28stream\stream_\bounded\be_\Cauchy.cs" />
+    <Compile Include="%28stream\stream_\bounded_\CauchyI.cs" />
+    <Compile Include="%28stream\stream_\bounded_\_cauchy_\Squeeze.cs" />
+    <Compile Include="%28stream\stream_\bounded_\_cauchy_\makeBoundDiameterLe\Lt.cs" />
+    <Compile Include="%28stream\stream_\bounded_\_cauchy_\makeBoundDiameterLt\Le.cs" />
+    <Compile Include="%28stream\stream_\convergent\Co.cs" />
+    <Compile Include="%28stream\stream_\convergent\co\Alesce.cs" />
+    <Compile Include="%28stream\stream_\convergent\co\InnerProd.cs" />
+    <Compile Include="%28stream\stream\co\alesce_\Multi.cs" />
+    <Compile Include="%28stream\stream\co\alesce_\Add.cs" />
+    <Compile Include="%28stream\stream\co\alesce_\multi_\Geometric.cs" />
+    <Compile Include="%28stream\stream_\Rigid.cs" />
+    <Compile Include="%28stream\stream_\rigid\cumulus_\Multi.cs" />
+    <Compile Include="%28stream\stream_\rigid\cumulus_\multi_\OfAbsProper.cs" />
+    <Compile Include="%28stream\stream_\rigid\cumulus_\multi_\ofAbsProper\Limit.cs" />
+    <Compile Include="%28stream\stream_\slider\Cumulus.cs" />
+    <Compile Include="%28stream\stream_\slider\cumulus_\AccumulatorDefault.cs" />
+    <Compile Include="%28stream\stream_\slider\cumulus_\opDefault_\Multi.cs" />
+    <Compile Include="%28stream\stream_\slider\op_\BinaryI.cs" />
+    <Compile Include="%28stream\stream_\slider\op_\binary_\multi\Cumulator.cs" />
+    <Compile Include="%28stream\stream_\slider\op_\binary_\_divide\Of.cs" />
+    <Compile Include="%28stream\stream_\slider\op_\binary_\_minus\Of.cs" />
+    <Compile Include="%28stream\stream_\slider\op_\_binary\Of.cs" />
+    <Compile Include="%28stream\stream_\slider\series_\arcsin_\Arcsin.cs" />
+    <Compile Include="%28stream\stream_\slider\series_\ln\cauchy\Limit.cs" />
+    <Compile Include="%28stream\stream_\slider\series_\ln\cauchy\limit_\GtOne.cs" />
+    <Compile Include="%28stream\stream_\slider\series_\_arcsin\Term.cs" />
+    <Compile Include="%28stream\stream_\slider\series_\_ln\Terms.cs" />
+    <Compile Include="%28stream\stream_\slider\series_\Ln.cs" />
+    <Compile Include="%28stream\stream_\slider\set\gregate_\_prod\Ret.cs" />
+    <Compile Include="%28stream\stream_\slider\set\Gregator.cs" />
+    <Compile Include="%28stream\stream_\slider\subsumed_\add_\GenerizedBinom.cs" />
+    <Compile Include="%28stream\stream_\slider\subsumed_\add_\_generizedBinom\Term.cs" />
+    <Compile Include="%28stream\stream_\slider\subsumed_\Prod.cs" />
+    <Compile Include="%28stream\stream_\slider\subsumed_\prod_\New.cs" />
+    <Compile Include="%28stream\stream_\slider\subsumed_\SeriesI.cs" />
+    <Compile Include="%28stream\stream_\slider_\arithmetic\Cumulus.cs" />
+    <Compile Include="%28stream\stream_\slider_\arithmetic_\Decrement.cs" />
+    <Compile Include="%28stream\stream_\slider_\arithmetic_\Std.cs" />
+    <Compile Include="%28stream\stream_\slider_\arithmetic_\std\Cumulus.cs" />
+    <Compile Include="%28stream\stream_\slider_\geometic\Cumulus.cs" />
+    <Compile Include="%28stream\stream_\slider_\geometic\cumulus_\sum_\Cauchy.cs" />
+    <Compile Include="%28stream\stream_\slider_\geometric_\std\Cumulus.cs" />
+    <Compile Include="%28stream\stream_\slider_\OfNat.cs" />
+    <Compile Include="%28stream\stream_\slider_\Combinate.cs" />
+    <Compile Include="%28stream\stream_\slider_\Permutate.cs" />
+    <Compile Include="%28stream\stream_\slider_\quotient_\Repeater.cs" />
+    <Compile Include="%28stream\stream_\slider_\Repeater.cs" />
+    <Compile Include="%28stream\stream_\slider_\Tetration.cs" />
+    <Compile Include="%28stream\stream_\_bounded_\BoundI.cs" />
+    <Compile Include="%28stream\stream_\_convergent_\Limit.cs" />
+    <Compile Include="%28stream\stream_\_func_\OnNumero.cs" />
+    <Compile Include="BagOfDbl.cs" />
+    <Compile Include="be\vow_\BeDefault4Float.cs" />
+    <Compile Include="be\vow_\BeDefaultDbl.cs" />
+    <Compile Include="be\vow_\BeDefault.cs" />
+    <Compile Include="be_\AbsLeDbl.cs" />
+    <Compile Include="be_\Bordered.cs" />
+    <Compile Include="be_\bordered\Vow.cs" />
+    <Compile Include="be_\bordered\VowDbl.cs" />
+    <Compile Include="be_\bordered\vow\Ee.cs" />
+    <Compile Include="be_\bordered\vow\EeDbl.cs" />
+    <Compile Include="be_\bordered\vow\ee_\BoundDefault.cs" />
+    <Compile Include="be_\Bounded.cs" />
+    <Compile Include="be_\bounded\VowDbl.cs" />
+    <Compile Include="be_\bounded\Vow.cs" />
+    <Compile Include="be_\bounded\vow\EeDbl.cs" />
+    <Compile Include="be_\bounded\vow\Ee.cs" />
+    <Compile Include="be_\bounded\vow\ee_\BoundDefault.cs" />
+    <Compile Include="be_\geNegOne\Anto.cs" />
+    <Compile Include="be_\geNegOne\Vow.cs" />
+    <Compile Include="be_\geNegOne\VowDbl.cs" />
+    <Compile Include="be_\geNegOne\vow\Ee.cs" />
+    <Compile Include="be_\geNegOne\vow\EeDbl.cs" />
+    <Compile Include="be_\GeNegOne.cs" />
+    <Compile Include="be_\GtNegOneDbl.cs" />
+    <Compile Include="be_\GtNegOne.cs" />
+    <Compile Include="be_\gtNegOne\Anto.cs" />
+    <Compile Include="be_\gtNegOne\Vow.cs" />
+    <Compile Include="be_\gtNegOne\VowDbl.cs" />
+    <Compile Include="be_\gtNegOne\vow\EeDbl.cs" />
+    <Compile Include="be_\gtNegOne\vow\Ee.cs" />
+    <Compile Include="be_\NonNeg4Dbl.cs" />
+    <Compile Include="be_\Nonneg4float.cs" />
+    <Compile Include="be_\nonneg\Vow4float.cs" />
+    <Compile Include="be_\nonneg\vow\Eefloat.cs" />
+    <Compile Include="be_\Nonnil.cs" />
+    <Compile Include="be_\neg\Vow4dbl.cs" />
+    <Compile Include="be_\neg\vow\Ee.cs" />
+    <Compile Include="be_\nonneg_\LtOne.cs" />
+    <Compile Include="be_\nonneg_\ltOne\Vow.cs" />
+    <Compile Include="be_\nonneg_\ltOne\VowDbl.cs" />
+    <Compile Include="be_\nonneg_\ltOne\vow\Ee.cs" />
+    <Compile Include="be_\nonneg_\ltOne\vow\EeDbl.cs" />
+    <Compile Include="be_\nonneg_\leOne\VowDbl.cs" />
+    <Compile Include="be_\nonneg_\leOne\Vow.cs" />
+    <Compile Include="be_\nonneg_\leOne\vow\EeDbl.cs" />
+    <Compile Include="be_\nonneg_\leOne\vow\Ee.cs" />
+    <Compile Include="be_\nonneg_\LeOne.cs" />
+    <Compile Include="be_\nonnil\Vow - Copy.cs" />
+    <Compile Include="be_\nonnil\vow\EeDbl.cs" />
+    <Compile Include="be_\notOne\Vow.cs" />
+    <Compile Include="be_\notOne\vow\En.cs" />
+    <Compile Include="be_\NotOne.cs" />
+    <Compile Include="be_\positive\VowDbl.cs" />
+    <Compile Include="be_\positive\vow\EeDbl.cs" />
+    <Compile Include="be_\positve_\LtOne4dbl.cs" />
+    <Compile Include="be_\positve_\ltOne\Vow4dbl.cs" />
+    <Compile Include="be_\positve_\ltOne\vow\Ee4dbl.cs" />
+    <Compile Include="be_\positve_\NeOne.cs" />
+    <Compile Include="be_\positve_\neOne\En.cs" />
+    <Compile Include="convert_\arctg_\OfQuotient.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\%28retiring\Max.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\%28retiring\Min.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\%28retiring\Product.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\%28retiring\Sum.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\SquareSum.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\Sum.cs" />
+    <Compile Include="co\alesce_\add\Cumulator4dbl.cs" />
+    <Compile Include="op_\binary_\Multi4dbl.cs" />
+    <Compile Include="op_\binary_\multi\Cumulator 4dbl.cs" />
+    <Compile Include="str\Accumulate.cs" />
+    <Compile Include="str\to_\scalar_\SqSum.cs" />
+    <Compile Include="vec\combine_\combine_\Minus.cs" />
+    <Compile Include="vec\co\NewFolder1\_InnerProductX.cs" />
+    <Compile Include="vec\co\InnerProduct.cs" />
+    <Compile Include="vec\co\Multi.cs" />
+    <Compile Include="vec\co\NewFolder1\Multi.cs" />
+    <Compile Include="nilnul0\num\quotient\stream_\slider_\one__over__one_minus_primeSq\cumulus_\Prod.cs" />
+    <Compile Include="str_\reals_\Started.cs" />
+    <Compile Include="str_\reals_\%28str%29\StrI.cs" />
+    <Compile Include="str\op_\unary_\NewFolder1\Square.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\Prod.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\%28retiring\NewFolder1\Sum.cs" />
+    <Compile Include="str_\reals_\StartedDbl.cs" />
+    <Compile Include="str_\reals_\started\OpDbl.cs" />
+    <Compile Include="str_\reals_\started\op_\Unary.cs" />
+    <Compile Include="str_\reals_\started\op_\unary_\Map.cs" />
+    <Compile Include="str_\reals_\started\op_\unary_\map_\Invert.cs" />
+    <Compile Include="nilnul0\num\real_\euler\Inverted.cs" />
+    <Compile Include="nilnul0\num\real_\Negative4dbl.cs" />
+    <Compile Include="nilnul0\num\real_\Nonneg4float.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\CoDbl.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg_\LtOneDbl.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg_\LeOneDbl.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg_\PositiveDbl.cs" />
+    <Compile Include="nilnul0\num\real_\NonnilDbl.cs" />
+    <Compile Include="nilnul0\num\real_\NotOne.cs" />
+    <Compile Include="nilnul0\num\real_\PositivesDbl.cs" />
+    <Compile Include="nilnul0\num\real_\positives_\Started.cs" />
+    <Compile Include="nilnul0\num\real_\positives_\started\cascade_\HarmonicMean.cs" />
+    <Compile Include="nilnul0\num\real_\positives_\started\Op.cs" />
+    <Compile Include="nilnul0\num\real_\positives_\started\op_\Unary.cs" />
+    <Compile Include="nilnul0\num\real_\positives_\started\op_\unary_\Map.cs" />
+    <Compile Include="nilnul0\num\real_\positives_\started\op_\unary_\map_\Invert.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\Lb.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\ln_\OfQuotient.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\ln_\ofQuotient_\_gtOne\Ret.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\ln_\ofQuotient_\_gtOne\_ret\Terms.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\ln_\ofQuotient_\_gtOne\_ret\terms\Series.cs" />
+    <Compile Include="nilnul0\num\real_\positive\coerce_\quotient_\unital_\Floor.cs" />
+    <Compile Include="nilnul0\num\real_\positive\op_\unary_\Tetration.cs" />
+    <Compile Include="nilnul0\num\real_\positive_\LtOneOfDblI.cs" />
+    <Compile Include="nilnul0\num\real_\positive_\ltOne\coerce_\quotient_\unital_\Floor.cs" />
+    <Compile Include="nilnul0\num\real_\positive_\NeOneI.cs" />
+    <Compile Include="str_\reals_\started\Find.cs" />
+    <Compile Include="str_\reals_\started\headed\Max.cs" />
+    <Compile Include="str_\reals_\started\headed\Min.cs" />
+    <Compile Include="str_\reals_\started\headed\seed\Max.cs" />
+    <Compile Include="str_\reals_\started\headed\seed\Min.cs" />
+    <Compile Include="str_\reals_\started\Max.cs" />
+    <Compile Include="str_\reals_\started\Mean.cs" />
+    <Compile Include="str_\reals_\started\Min.cs" />
+    <Compile Include="str_\reals_\started\NewFolder1\Mean.cs" />
+    <Compile Include="str_\reals_\started_\distinct\Max.cs" />
+    <Compile Include="str_\reals_\_X.cs" />
+    <Compile Include="nilnul0\num\real_\TauX - Copy.cs" />
+    <Compile Include="nilnul0\num\_real_\Dbl.cs" />
+    <Compile Include="nilnul0\num\_real_\ClampI.cs" />
+    <Compile Include="nilnul0\obj\Measure4dbl.cs" />
+    <Compile Include="nilnul0\obj\Measure.cs" />
+    <Compile Include="nilnul0\obj\Metric4dblA.cs" />
+    <Compile Include="nilnul0\obj\Metric_negatable.cs" />
+    <Compile Include="nilnul0\obj\measure~\Metric.cs" />
+    <Compile Include="nilnul0\obj\_measure\Unit - Copy.cs" />
+    <Compile Include="nilnul0\obj\_measure\Unit.cs" />
+    <Compile Include="nilnul0\obj\_measure\_unit_\Magnitude4dblI.cs" />
+    <Compile Include="nilnul0\obj\_measure\_unit_\MagnitudeI.cs" />
+    <Compile Include="nilnul0\obj\_measure\NewFolder1\Unit.cs" />
+    <Compile Include="nilnul0\obj\_measure\NewFolder1\_unit_\MagnitudeI.cs" />
+    <Compile Include="nilnul0\obj\_measure_\Amount4dblI.cs" />
+    <Compile Include="nilnul0\obj\_measure_\AmountI.cs" />
+    <Compile Include="nilnul0\obj\_measure_\ToStd4Dbl.cs" />
+    <Compile Include="nilnul0\obj\_measure_\ToStd - Copy.cs" />
+    <Compile Include="nilnul0\obj\_measure_\UnitI1.cs" />
+    <Compile Include="nilnul0\obj\_measure_\NewFolder1\UnitI.cs" />
+    <Compile Include="nilnul0\obj\_metric\Unit.cs" />
+    <Compile Include="nilnul0\obj\_metric_\Quantity4dbl.cs" />
+    <Compile Include="nilnul0\obj\_metric_\ToStd - Copy.cs" />
+    <Compile Include="nilnul0\obj\_metric_\ToStd.cs" />
+    <Compile Include="nilnul0\obj\_metric_\Quantity.cs" />
+    <Compile Include="nilnul0\obj\_measure_\NewFolder1\UnitI - 复制.cs" />
+    <Compile Include="nilnul0\obj\_metric_\MarkI.cs" />
+    <Compile Include="nilnul0\obj\_measure_\NewFolder1\AmountI.cs" />
+    <Compile Include="op_\Binary4dblI.cs" />
+    <Compile Include="op_\binary_\multi\Cumulator.cs" />
+    <Compile Include="op_\CubicX.cs" />
+    <Compile Include="op_\nary\calced\Cached.cs" />
+    <Compile Include="op_\nary\_calced_\OpA.cs" />
+    <Compile Include="op_\Unary4dbl.cs" />
+    <Compile Include="op_\NaryI.cs" />
+    <Compile Include="op_\unary\Calc.cs" />
+    <Compile Include="op_\unary\_calced_\OpA.cs" />
+    <Compile Include="op_\unary_\Arcsin.cs" />
+    <Compile Include="op_\unary_\arctg_\_bySeries\ret_\_ofAbsLtOneNeNil\Slider.cs" />
+    <Compile Include="op_\unary_\Cube.cs" />
+    <Compile Include="op_\unary_\Permutate.cs" />
+    <Compile Include="op_\unary_\BinomCoeff.cs" />
+    <Compile Include="ReDbl.cs" />
+    <Compile Include="re_\ApproximateDbl.cs" />
+    <Compile Include="re_\Approximate.cs" />
+    <Compile Include="be_\AbsLe.cs" />
+    <Compile Include="be_\gtNegPiLePi\Vow.cs" />
+    <Compile Include="be_\gtNegPiLePi\vow\Ee.cs" />
+    <Compile Include="be_\geNegPiLtPi\Vow.cs" />
+    <Compile Include="be_\geNegPiLtPi\vow\Ee.cs" />
+    <Compile Include="be_\GeNegPiLtPi.cs" />
+    <Compile Include="be_\GtNegPiLePi.cs" />
+    <Compile Include="be_\absProper\Vow.cs" />
+    <Compile Include="be_\absProper\vow\En.cs" />
+    <Compile Include="be_\AbsProper.cs" />
+    <Compile Include="be_\absLtQuarterTau\Vow.cs" />
+    <Compile Include="be_\absLtQuarterTau\vow\Ee.cs" />
+    <Compile Include="be_\AbsLtQuaterTau.cs" />
+    <Compile Include="be_\ofBound_\AwayFroNil.cs" />
+    <Compile Include="be_\ofBound_\InvolveNil.cs" />
+    <Compile Include="be_\ofBound_\Negative.cs" />
+    <Compile Include="be_\ofBound_\Nil.cs" />
+    <Compile Include="be_\ofBound_\Positive.cs" />
+    <Compile Include="be_\GeOne.cs" />
+    <Compile Include="be_\geOne\Anto.cs" />
+    <Compile Include="be_\geOne\Vow.cs" />
+    <Compile Include="be_\geOne\vow\En.cs" />
+    <Compile Include="be_\AbsLeOne.cs" />
+    <Compile Include="be_\absLeOne\Vow.cs" />
+    <Compile Include="be_\absLeOne\vow\En.cs" />
+    <Compile Include="be_\LeOne.cs" />
+    <Compile Include="be_\leOne\Anto.cs" />
+    <Compile Include="be_\leOne\Vow.cs" />
+    <Compile Include="be_\leOne\vow\En.cs" />
+    <Compile Include="be_\Neighbored.cs" />
+    <Compile Include="be_\PositiveDbl.cs" />
+    <Compile Include="be_\Whole.cs" />
+    <Compile Include="be_\Miniature.cs" />
+    <Compile Include="be_\ltOne\Anto.cs" />
+    <Compile Include="be_\ltOne\Vow.cs" />
+    <Compile Include="be_\ltOne\vow\En.cs" />
+    <Compile Include="be_\LtOne.cs" />
+    <Compile Include="be_\GtOne.cs" />
+    <Compile Include="be_\NegOfDbl.cs" />
+    <Compile Include="be_\neg\Anto.cs" />
+    <Compile Include="be_\neg\Vow.cs" />
+    <Compile Include="be_\neg\vow\En.cs" />
+    <Compile Include="be_\Nil1.cs" />
+    <Compile Include="be_\nil\Vow.cs" />
+    <Compile Include="be_\nil\vow\En.cs" />
+    <Compile Include="be_\gtOne\Anto.cs" />
+    <Compile Include="be_\gtOne\Vow.cs" />
+    <Compile Include="be_\gtOne\vow\En.cs" />
+    <Compile Include="be_\nonneg\VowDbl.cs" />
+    <Compile Include="be_\nonneg\vow\EeDbl.cs" />
+    <Compile Include="be_\nonneg_\LtPi.cs" />
+    <Compile Include="be_\nonneg_\ltPi\Vow.cs" />
+    <Compile Include="be_\nonneg_\ltPi\vow\Ee.cs" />
+    <Compile Include="be_\nonneg_\LtTau.cs" />
+    <Compile Include="be_\nonneg_\ltTau\Vow - Copy.cs" />
+    <Compile Include="be_\nonneg_\ltTau\Vow.cs" />
+    <Compile Include="be_\nonneg_\ltTau\vow\Ee - Copy.cs" />
+    <Compile Include="be_\nonneg_\ltTau\vow\Ee.cs" />
+    <Compile Include="be_\Nonpositive.cs" />
+    <Compile Include="be_\positive\Anto.cs" />
+    <Compile Include="be_\positve_\LeOne.cs" />
+    <Compile Include="be_\positve_\leOne\Anto.cs" />
+    <Compile Include="be_\positve_\leOne\Vow.cs" />
+    <Compile Include="be_\positve_\leOne\vow\En.cs" />
+    <Compile Include="be_\positve_\LtOne.cs" />
+    <Compile Include="be_\positve_\ltOne\Anto.cs" />
+    <Compile Include="be_\positve_\ltOne\Vow.cs" />
+    <Compile Include="be_\positve_\ltOne\vow\En.cs" />
+    <Compile Include="be_\rotation_\Acute.cs" />
+    <Compile Include="%28border\border\comparer_\lower\Lower.cs" />
+    <Compile Include="%28border\border\comparer_\upper\Upper.cs" />
+    <Compile Include="%28border\border\co\Vow.cs" />
+    <Compile Include="%28border\border\co\vow\En.cs" />
+    <Compile Include="be_\nonneg\Vow.cs" />
+    <Compile Include="be_\nonneg\vow\En.cs" />
+    <Compile Include="be_\nonnil\Vow.cs" />
+    <Compile Include="be_\nonnil\vow\En.cs" />
+    <Compile Include="be_\Negative1.cs" />
+    <Compile Include="be_\Positive.cs" />
+    <Compile Include="be_\NonNeg.cs" />
+    <Compile Include="be_\positive\Vow.cs" />
+    <Compile Include="be_\positive\vow\En.cs" />
+    <Compile Include="be_\Quotient.cs" />
+    <Compile Include="be_\nil\Anto.cs" />
+    <Compile Include="be_\nonnil\en\op\Inverse.cs" />
+    <Compile Include="%28border\border\comparer_\Upper.cs" />
+    <Compile Include="%28border\border\comparer_\Lower.cs" />
+    <Compile Include="%28border\border\co\be\Vow.cs" />
+    <Compile Include="%28border\border\co\be\En.cs" />
+    <Compile Include="%28border\border\co\be_\nonempty\Vow.cs" />
+    <Compile Include="%28border\border\co\be_\nonempty\vow\En.cs" />
+    <Compile Include="bound_\rotation_\Acute.cs" />
+    <Compile Include="_bound\Upper.cs" />
+    <Compile Include="_bound\Lower.cs" />
+    <Compile Include="co_\starT_\Nonneg.cs" />
+    <Compile Include="co\be_\be_\EitherNil.cs" />
+    <Compile Include="co_\starT_\nonneg\Pow.cs" />
+    <Compile Include="co_\starT_\positive\pow_\BySupRounded.cs" />
+    <Compile Include="co_\starT_\positive\pow_\ByBorderOped.cs" />
+    <Compile Include="co_\starT_\positive\pow_\_byOpSupBorder\Ret.cs" />
+    <Compile Include="co_\starT_\positive\pow_\_byOpSupBorder\ret_\RadicLeOne.cs" />
+    <Compile Include="co_\starT_\positive\pow_\_bySupRounded\ret_\SupAbsLtOne.cs" />
+    <Compile Include="%28func%29\func\Equation.cs" />
+    <Compile Include="%28stream\stream\cumulated_\Prod.cs" />
+    <Compile Include="%28stream\stream\cumulated_\Sum.cs" />
+    <Compile Include="%28stream\stream\Cumulated.cs" />
+    <Compile Include="%28stream\stream\SeriesI.cs" />
+    <Compile Include="%28stream\stream_\Constant.cs" />
+    <Compile Include="%28stream\stream_\constant\Prod.cs" />
+    <Compile Include="%28stream\stream_\constant\Pi.cs" />
+    <Compile Include="%28stream\stream_\slider\Subsumed.cs" />
+    <Compile Include="%28stream\stream_\slider\subsume_\Exp.cs" />
+    <Compile Include="%28stream\stream_\slider\subsume_\_exp\Exp.cs" />
+    <Compile Include="%28stream\stream_\slider_\Algebraic.cs" />
+    <Compile Include="%28stream\stream_\slider_\Exp.cs" />
+    <Compile Include="%28stream\stream_\slider_\geometric_\Std.cs" />
+    <Compile Include="%28stream\stream_\slider_\geometric_\std_\RateAbsProper.cs" />
+    <Compile Include="%28stream\stream_\slider_\geometric_\std_\rateMiniature\Subsumed.cs" />
+    <Compile Include="%28stream\stream_\slider_\quotient_\factorial\Inversed.cs" />
+    <Compile Include="%28var\var\str_\Sans0StartedI.cs" />
+    <Compile Include="comp\Comparer - Copy.cs" />
+    <Compile Include="ConvertI.cs" />
+    <Compile Include="convert_\SquareX - Copy.cs" />
+    <Compile Include="nilnul0\num\real_\PositiveDbl.cs" />
+    <Compile Include="nilnul0\num\real_\_positive\Trichotomy.cs" />
+    <Compile Include="CombineI.cs" />
+    <Compile Include="combine_\Add.cs" />
+    <Compile Include="combine_\Multi.cs" />
+    <Compile Include="nilnul0\num\RealX4Dbl.cs" />
+    <Compile Include="nilnul0\num\real_\floored\Proper.cs" />
+    <Compile Include="nilnul0\num\real_\NonNegDbl.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\coerce_\Abs.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg_\LtTau - Copy.cs" />
+    <Compile Include="re_\Eq.cs" />
+    <Compile Include="Seq4dbl.cs" />
+    <Compile Include="Seq.cs" />
+    <Compile Include="seq_\Str4dbl.cs" />
+    <Compile Include="seq_\Str.cs" />
+    <Compile Include="sortie\Find.cs" />
+    <Compile Include="seq_\str_\Polyn4dbl.cs" />
+    <Compile Include="Tail.cs" />
+    <Compile Include="Proper.cs" />
+    <Compile Include="%28sign\_SignX.cs" />
+    <Compile Include="nilnul0\num\quotient\stream_\slider_\odd\inversed\alternated\series\buffered\Limit.cs" />
+    <Compile Include="nilnul0\num\real_\cauchy_\nil_\OscilatedZero.cs" />
+    <Compile Include="nilnul0\num\real_\cauchy_\nil_\Reduce2Zero.cs" />
+    <Compile Include="nilnul0\num\real_\AbsLeOne.cs" />
+    <Compile Include="nilnul0\num\real_\LeOne.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg_\LtPi.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg_\LtTau.cs" />
+    <Compile Include="nilnul0\num\real_\positive_\LeOneI.cs" />
+    <Compile Include="nilnul0\num\real_\positive_\LtOneI.cs" />
+    <Compile Include="nilnul0\num\real_\GtOne.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\op_\unary_\Index.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\op_\unary_\Pow.cs" />
+    <Compile Include="nilnul0\num\real_\nonnil\op_\unary_\Index.cs" />
+    <Compile Include="co_\starT_\positive\pow_\_byOpSupBorder\ret_\RadicGtOne.cs" />
+    <Compile Include="ext_\Inf.cs" />
+    <Compile Include="nilnul0\num\real_\golden\Conjugate.cs" />
+    <Compile Include="nilnul0\num\real_\TauI.cs" />
+    <Compile Include="nilnul0\num\real_\TauX.cs" />
+    <Compile Include="nilnul0\num\real_\Tau_a_.cs" />
+    <Compile Include="nilnul0\num\real_\_tau\Cumulus.cs" />
+    <Compile Include="nilnul0\num\real_\_tau\_cumulus\slider_a.cs" />
+    <Compile Include="nilnul0\num\real_\GoldenRatio.cs" />
+    <Compile Include="nilnul0\num\real_\golden\conjugate\GoldenRatioConjugateComplement.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\op_\unary_\_sqrt\Ret.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\op_\unary_\_sqrt\ret_\ofQ_\PositiveLtOne.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\op_\unary_\_sqrt\ret_\ofQ_\GtOne.cs" />
+    <Compile Include="nilnul0\num\real_\positive\op_\Unary.cs" />
+    <Compile Include="nilnul0\num\real_\positive\op_\unary_\Index.cs" />
+    <Compile Include="nilnul0\num\real_\positive\op_\unary_\Pow.cs" />
+    <Compile Include="nilnul0\num\real_\positive\op_\unary_\Sqrt.cs" />
+    <Compile Include="nilnul0\num\real_\Cauchy.cs" />
+    <Compile Include="nilnul0\num\real_\Rouned.cs" />
+    <Compile Include="nilnul0\num\real_\scaled_\OfTau.cs" />
+    <Compile Include="nilnul0\num\_real_\NewFolder1\BoundI - Copy.cs" />
+    <Compile Include="nilnul0\num\_real_\_nestedBound_\bound~\BoundI - Copy.cs" />
+    <Compile Include="op_\binary\Accumulator.cs" />
+    <Compile Include="op_\binary\cumulator_\Prod.cs" />
+    <Compile Include="op_\binary\cumulator_\Sum.cs" />
+    <Compile Include="op_\binary_\Max.cs" />
+    <Compile Include="%28stream\stream_\slider\op_\_unary\Of.cs" />
+    <Compile Include="%28tuple%29\TupleI.cs" />
+    <Compile Include="%28tuple%29\tuple\FoldI.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\op_\Unary.cs" />
+    <Compile Include="nilnul0\num\real_\Negative.cs" />
+    <Compile Include="nilnul0\num\real_\positive\CastI.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\ln_\ByReverseExp.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\Sup.cs" />
+    <Compile Include="op_\binary_\Divide.cs" />
+    <Compile Include="op_\binary_\PowerI.cs" />
+    <Compile Include="op_\unary_\Abs.cs" />
+    <Compile Include="op_\unary_\arctg_\BySeries.cs" />
+    <Compile Include="op_\unary_\arctg_\_byInverse\ret_\OfAroundOne.cs" />
+    <Compile Include="op_\unary_\arctg_\_bySeries\ret_\OfAbsLeOne.cs" />
+    <Compile Include="op_\unary_\arctg_\_bySeries\ret_\_ofAbsLeOne\Slider.cs" />
+    <Compile Include="op_\unary_\arctg_\_ofAbsCircaOne\ret_\OfDiameterLe4OverTen.cs" />
+    <Compile Include="op_\unary_\Cos.cs" />
+    <Compile Include="op_\unary_\Cos_byClampArg.cs" />
+    <Compile Include="op_\unary_\_SinX.cs" />
+    <Compile Include="op_\unary_\_CosX.cs" />
+    <Compile Include="op_\unary_\exp_\OfQuotient.cs" />
+    <Compile Include="op_\unary_\InjectiveI.cs" />
+    <Compile Include="op_\unary_\injective_\UpwardI.cs" />
+    <Compile Include="op_\unary_\injective_\upward\Inverse.cs" />
+    <Compile Include="op_\unary_\Pow.cs" />
+    <Compile Include="op_\unary_\pow_\IndexI.cs" />
+    <Compile Include="op_\unary_\pow_\index_\poly.cs" />
+    <Compile Include="op_\unary_\pow_\RootI.cs" />
+    <Compile Include="op_\unary_\Sin_byClampArg.cs" />
+    <Compile Include="op_\unary_\Sin.cs" />
+    <Compile Include="op_\unary_\Tg.cs" />
+    <Compile Include="op_\unary_\_abs\Ret.cs" />
+    <Compile Include="op_\unary_\injective_\upward\_inverse\_ret_\_clamp\DomainNarrow.cs" />
+    <Compile Include="nilnul0\num\real_\positive\op_\unary_\Root.cs" />
+    <Compile Include="nilnul0\num\real_\positive\op_\unary_\_root\ret_\RadicPositve_DegreePlural.cs" />
+    <Compile Include="op_\binary_\Add.cs" />
+    <Compile Include="co_\starT_\positive\Pow.cs" />
+    <Compile Include="op_\binary_\Min.cs" />
+    <Compile Include="op_\binary_\_add\Ret.cs" />
+    <Compile Include="op_\UnaryI.cs" />
+    <Compile Include="op_\unary_\Exp.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\Ln.cs" />
+    <Compile Include="op_\unary_\Index.cs" />
+    <Compile Include="op_\unary_\Ln.cs" />
+    <Compile Include="op_\unary_\Root.cs" />
+    <Compile Include="op_\unary_\Scale.cs" />
+    <Compile Include="op_\unary_\Sqrt.cs" />
+    <Compile Include="op_\unary_\Poly.cs" />
+    <Compile Include="op_\unary_\_cos\Ret_ofAcute_byClampArg.cs" />
+    <Compile Include="op_\unary_\_cos\Of.cs" />
+    <Compile Include="op_\unary_\_cos\of_\Quotient.cs" />
+    <Compile Include="op_\unary_\_cos\of_\_quotient\Cumulus.cs" />
+    <Compile Include="op_\unary_\_cos\of_\_quotient\_cumulus\Term.cs" />
+    <Compile Include="op_\unary_\_exp\Ret.cs" />
+    <Compile Include="op_\unary_\_exp\ret_\ofQuotient_\OfPositive.cs" />
+    <Compile Include="op_\unary_\_exp\ret_\ofQuotient_\_ofPositive\Series.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\_ln\Ret.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\_ln\ret_\OfQ.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\_ln\ret_\_lnQuotient\LnX.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\_ln\ret_\_lnQuotient\terms\Series.cs" />
+    <Compile Include="op_\unary_\_scale\ret_\Ret.cs" />
+    <Compile Include="op_\BinaryI.cs" />
+    <Compile Include="co_\Div.cs" />
+    <Compile Include="co_\divisible\div_\DivFloored.cs" />
+    <Compile Include="co_\NonegPos.cs" />
+    <Compile Include="co_\divisible\Mod.cs" />
+    <Compile Include="ext_\inf_\Pos.cs" />
+    <Compile Include="ext_\inf_\Neg.cs" />
+    <Compile Include="op_\unary_\Square.cs" />
+    <Compile Include="op_\unary_\_sin\Ret_byClampArg.cs" />
+    <Compile Include="op_\unary_\_sin\Ret.cs" />
+    <Compile Include="op_\unary_\_sin\ret_\OfQuotient.cs" />
+    <Compile Include="op_\unary_\_sin\ret_\_ofQuotient\Cumulus.cs" />
+    <Compile Include="op_\unary_\_sin\ret_\_ofQuotient\_cumulus\Term.cs" />
+    <Compile Include="op_\unary_\_square\Of.cs" />
+    <Compile Include="%28sign\OfLimit.cs" />
+    <Compile Include="%28sign\_ofLimit\Trichotomy.cs" />
+    <Compile Include="%28stream\MeshI.cs" />
+    <Compile Include="%28stream\mesh\_transpose\Ret.cs" />
+    <Compile Include="%28stream\mesh\_col\Ret.cs" />
+    <Compile Include="%28stream\mesh_\ColPiable.cs" />
+    <Compile Include="seq_\SeqI.cs" />
+    <Compile Include="seq_\PiableI.cs" />
+    <Compile Include="seq_\piable\Pi.cs" />
+    <Compile Include="%28stream\stream\BeI.cs" />
+    <Compile Include="%28stream\stream\be\Vow.cs" />
+    <Compile Include="%28stream\stream\be\vow_\BeDefault.cs" />
+    <Compile Include="%28stream\stream\be_\piable\Vow.cs" />
+    <Compile Include="%28stream\stream\be_\piable\vow\En.cs" />
+    <Compile Include="%28stream\stream\be_\piable\vow\en_\VowGeneral.cs" />
+    <Compile Include="%28stream\stream\be_\Unbounded.cs" />
+    <Compile Include="%28stream\stream\be_\Divergent.cs" />
+    <Compile Include="%28stream\stream\be_\Decreasing.cs" />
+    <Compile Include="%28stream\stream\be_\Monotonic.cs" />
+    <Compile Include="%28stream\stream\be_\Increasing.cs" />
+    <Compile Include="%28stream\stream\be_\Bounded.cs" />
+    <Compile Include="%28stream\stream\be_\Cauchy.cs" />
+    <Compile Include="%28stream\stream\be_\Piable.cs" />
+    <Compile Include="%28stream\stream\be_\_convergent\theorem_\LimSupEqLimInf.cs" />
+    <Compile Include="%28stream\stream\be_\_convergent\theorem_\SqueezedBetweenConvergencies.cs" />
+    <Compile Include="%28stream\stream\be_\_convergent\theorem_\Func.cs" />
+    <Compile Include="%28stream\stream\be_\_convergent\theorem_\BoundedMontonic.cs" />
+    <Compile Include="%28stream\stream\be_\_divergent\theorem_\UnboundI.cs" />
+    <Compile Include="%28stream\stream\cast_\real_\LimInf.cs" />
+    <Compile Include="%28stream\stream\cast_\real_\LimSup.cs" />
+    <Compile Include="%28stream\stream\Clonable.cs" />
+    <Compile Include="%28stream\stream\clonable\stream\clonable\Transpose.cs" />
+    <Compile Include="%28stream\stream\clonable\stream\clonable\transposed_\elPiable\_pi\Pi.cs" />
+    <Compile Include="%28stream\stream\clonable\stream\clonable\_transpose\Ret.cs" />
+    <Compile Include="%28stream\stream\clonable\stream\clonable\_transpose\_ret\Ret.cs" />
+    <Compile Include="%28stream\stream\clonable\stream\Clonable.cs" />
+    <Compile Include="%28stream\stream\VowI.cs" />
+    <Compile Include="%28stream\stream\vow\En.cs" />
+    <Compile Include="%28stream\stream_\convergent\co_\Squeezer.cs" />
+    <Compile Include="%28stream\stream\op_\BinaryI.cs" />
+    <Compile Include="%28stream\stream\op_\UnaryI.cs" />
+    <Compile Include="%28stream\stream\op_\unary_\Subsequence.cs" />
+    <Compile Include="%28stream\stream\op_\unary_\Prod.cs" />
+    <Compile Include="%28stream\stream\op_\unary_\subseq_\OddI.cs" />
+    <Compile Include="%28stream\stream\op_\unary_\subseq_\EvnI.cs" />
+    <Compile Include="%28stream\stream\op_\unary_\_prod\Ret.cs" />
+    <Compile Include="%28stream\stream_\PiableI.cs" />
+    <Compile Include="%28stream\stream_\piable\Pi.cs" />
+    <Compile Include="%28stream\stream_\piable\StreamI.cs" />
+    <Compile Include="%28stream\mesh_\colPiable\_colPi\Ret.cs" />
+    <Compile Include="%28stream\stream_\piable\stream\_termPi\TermPi.cs" />
+    <Compile Include="%28stream\stream_\piable_\VowGeneric.cs" />
+    <Compile Include="%28stream\_stream_\ResetI.cs" />
+    <Compile Include="Floor.cs" />
+    <Compile Include="Constant.cs" />
+    <Compile Include="nilnul0\num\real_\NonNeg%28.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\op_\unary_\Root.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\op_\unary_\Sqrt.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\op_\unary_\_root\ret_\GtOneQ_PluralN.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\op_\unary_\_root\ret_\PositiveProperQ_PluralN.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\op_\unary_\_root\ret_\RadicNonnegR_DegreePlural.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\ConvertI.cs" />
+    <Compile Include="nilnul0\num\real_\nonnil\op_\unary_\_inverse\Ret.cs" />
+    <Compile Include="nilnul0\num\real_\nonnil\_call_\Arg.cs" />
+    <Compile Include="nilnul0\num\real_\nonnil\_call_\ArgArg1.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\be\Vow.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\be_\nonnil\Vow.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\be_\nonnil\vow\En.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\vow\En.cs" />
+    <Compile Include="nilnul0\num\real_\Floored.cs" />
+    <Compile Include="op_\unary_\_shift\Ret_shiftNonZero.cs" />
+    <Compile Include="nilnul0\num\RealX1.cs" />
+    <Compile Include="nilnul0\num\RealI.cs" />
+    <Compile Include="nilnul0\num\_real_\_nestedBound_\bound~\RangeI - Copy.cs" />
+    <Compile Include="nilnul0\num\_real_\BoundI.cs" />
+    <Compile Include="nilnul0\num\quotient\bound_\closed\Stream.cs" />
+    <Compile Include="nilnul0\num\quotient\bound_\closed\stream_\Nested.cs" />
+    <Compile Include="nilnul0\num\quotient\bound_\closed\stream_\nested_\Converged.cs" />
+    <Compile Include="%28set\set_\sed_\cofinal~\%28real_choiceGen\ChoiceI - Copy.cs" />
+    <Compile Include="%28set\set_\sed_\cofinal~\%28real_choiceGen\ChoiceI.cs" />
+    <Compile Include="nilnul0\num\_real_\NewFolder1\Squeeze.cs" />
+    <Compile Include="nilnul0\num\dbl\%28retiring\Comparer.cs" />
+    <Compile Include="nilnul0\num\dbl\%28retiring\Duo.cs" />
+    <Compile Include="nilnul0\num\dbl\BeI.cs" />
+    <Compile Include="be\be\Vow.cs" />
+    <Compile Include="be_\positive\positive\Vow.cs" />
+    <Compile Include="be_\nonneg\nonneg\Vow.cs" />
+    <Compile Include="be_\be_\Positive.cs" />
+    <Compile Include="be_\be_\Noneg.cs" />
+    <Compile Include="%28border\BorderDbl.cs" />
+    <Compile Include="%28border\%28retiring\border\Co.cs" />
+    <Compile Include="%28border\%28retiring\border\comp_\upper\Re.cs" />
+    <Compile Include="%28border\%28retiring\border\comp_\Lower.cs" />
+    <Compile Include="%28border\%28retiring\border\comp_\lower\Re.cs" />
+    <Compile Include="%28border\%28retiring\border\comp_\Upper.cs" />
+    <Compile Include="%28border\%28retiring\border\comp\Re.cs" />
+    <Compile Include="%28border\%28retiring\border\co\Be.cs" />
+    <Compile Include="%28border\%28retiring\border\co\vow\En.cs" />
+    <Compile Include="%28border\%28retiring\border\co\be\Vow.cs" />
+    <Compile Include="%28border\%28retiring\border\co\be_\Dwelt.cs" />
+    <Compile Include="%28border\%28retiring\border\co\be_\dwelt\Vow.cs" />
+    <Compile Include="%28border\%28retiring\border\co\be_\dwelt\vow\En.cs" />
+    <Compile Include="%28border\%28retiring\border\co\be_\Single.cs" />
+    <Compile Include="%28border\%28retiring\border\co\be_\Spanned.cs" />
+    <Compile Include="%28border\%28retiring\border\co\VowI.cs" />
+    <Compile Include="%28border\%28retiring\border\_X.cs" />
+    <Compile Include="%28border\%28retiring\border\Eq.cs" />
+    <Compile Include="%28bound\%28retiring\Bound dbl.cs" />
+    <Compile Include="co_\singleton_\GoldenRatioVsE.cs" />
+    <Compile Include="%28func%29\func\equation\BinarySearchX.cs" />
+    <Compile Include="%28expr\Expr2.cs" />
+    <Compile Include="%28expr\expr\ask_\PolyCoefficient.cs" />
+    <Compile Include="%28expr\expr\be_\Homogeneous.cs" />
+    <Compile Include="%28expr\expr\FormulaI.cs" />
+    <Compile Include="%28expr\expr\holder\Identity.cs" />
+    <Compile Include="expr_\plain_\CallI.cs" />
+    <Compile Include="expr_\call_\Binary.cs" />
+    <Compile Include="expr_\call_\Unary.cs" />
+    <Compile Include="expr_\call_\Nary.cs" />
+    <Compile Include="expr_\PlainI.cs" />
+    <Compile Include="expr_\plain_\_call_\ArgArg1I.cs" />
+    <Compile Include="expr_\plain_\_call_\Arg1I.cs" />
+    <Compile Include="expr_\plain_\_call_\ArgI.cs" />
+    <Compile Include="expr_\%28retiring\NewFolder1\NewFolder1\VarAsExpr.cs" />
+    <Compile Include="expr_\_call_\ArgI.cs" />
+    <Compile Include="expr_\_plain_\SubstituteI.cs" />
+    <Compile Include="expr_\_plain_\VarsI.cs" />
+    <Compile Include="%28expr\_expr_\BlankI.cs" />
+    <Compile Include="%28expr\_expr_\SubstituteI.cs" />
+    <Compile Include="%28expr\_expr_\VarsI2.cs" />
+    <Compile Include="%28func%29\%28retiring\FuncI.cs" />
+    <Compile Include="%28func%29\FuncI2.cs" />
+    <Compile Include="%28func%29\eg\PercentConcaveSqrt.cs" />
+    <Compile Include="%28func%29\func\op_\UnaryI.cs" />
+    <Compile Include="%28func%29\func\op_\unary_\Derive.cs" />
+    <Compile Include="func_\UnaryI.cs" />
+    <Compile Include="%28func%29\Ranged.cs" />
+    <Compile Include="expr_\poly\poly\interpolate\Sylvester.cs" />
+    <Compile Include="ext\border\co\be_\Dwelled.cs" />
+    <Compile Include="ext\border\co\be_\dwelt\Vow.cs" />
+    <Compile Include="ext\border\co\Ed.cs" />
+    <Compile Include="ext\border\co\ed_\Dwelled.cs" />
+    <Compile Include="ext\border\ReI.cs" />
+    <Compile Include="ext\border\re_\Joinder.cs" />
+    <Compile Include="ext\Eq.cs" />
+    <Compile Include="%28func%29\_func_\BlankI.cs" />
+    <Compile Include="%28func%29\_func_\Body.cs" />
+    <Compile Include="%28func%29\_func_\Pars.cs" />
+    <Compile Include="%28bound\bound\Walk.cs" />
+    <Compile Include="%28bound\%28retiring\bound_\Neighbor.cs" />
+    <Compile Include="to_\int_\BiggerLtTwo.cs" />
+    <Compile Include="to_\quotient_\radix_\RadixCyclic.cs" />
+    <Compile Include="to_\Quotient.cs" />
+    <Compile Include="vec\str_\started\braid_\Prod.cs" />
+    <Compile Include="Vow4floatI.cs" />
+    <Compile Include="VowI - Copy %282%29.cs" />
+    <Compile Include="VowDblI.cs" />
+    <Compile Include="vow\Ee4float.cs" />
+    <Compile Include="vow\EeDbl.cs" />
+    <Compile Include="vow\ee_\VowDefault4Float.cs" />
+    <Compile Include="vow\ee_\VowDefaultDbl.cs" />
+    <Compile Include="vow\ee_\VowDefault.cs" />
+    <Compile Include="vow\NewFolder1\En1 - Copy.cs" />
+    <Compile Include="vow\NewFolder1\En1.cs" />
+    <Compile Include="vow\VowOfDoubleI - Copy.cs" />
+    <Compile Include="vow\vow\VowI.cs" />
+    <Compile Include="vow\vow\vow\En.cs" />
+    <Compile Include="nilnul0\num\dbl_\%28retiring\NonNegative.cs" />
+    <Compile Include="%28bound\range\PointRel2Range.cs" />
+    <Compile Include="%28border\border\_X.cs" />
+    <Compile Include="%28border\border\_co_\UpperI.cs" />
+    <Compile Include="%28border\border\_co_\LowerI.cs" />
+    <Compile Include="%28co\Duo.cs" />
+    <Compile Include="co\BeI1.cs" />
+    <Compile Include="co\be\En.cs" />
+    <Compile Include="co\be_\Lt.cs" />
+    <Compile Include="co\be_\Le.cs" />
+    <Compile Include="co_\SortedSpanned.cs" />
+    <Compile Include="%28stream\stream\eq_\Asymptotic.cs" />
+    <Compile Include="%28stream\stream_\ConvergencyI.cs" />
+    <Compile Include="%28var\Sortie.cs" />
+    <Compile Include="%28var\VarI1.cs" />
+    <Compile Include="%28var\var\Eq1.cs" />
+    <Compile Include="%28var\var\Set2.cs" />
+    <Compile Include="%28var\var\set\op_\binary_\Union.cs" />
+    <Compile Include="%28var\var\SortieI.cs" />
+    <Compile Include="%28var\var\Str.cs" />
+    <Compile Include="vec\theorem_\equation_\Lagrange.cs" />
+    <Compile Include="Comparer2.cs" />
+    <Compile Include="comp\Re1.cs" />
+    <Compile Include="comp\comp\Re1.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\BeI.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\be_\Nonnil.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\Vow.cs" />
+    <Compile Include="nilnul0\num\real_\quotient_\Nonnil.cs" />
+    <Compile Include="nilnul0\num\real_\quotient_\nonnil\op_\unary_\Inverse.cs" />
+    <Compile Include="nilnul0\num\real_\Euler.cs" />
+    <Compile Include="nilnul0\num\dbl_\Positive.cs" />
+    <Compile Include="nilnul0\num\dbl_\Nonneg.cs" />
+    <Compile Include="op_\binary_\_multi\Ret.cs" />
+    <Compile Include="op_\unary_\Shift.cs" />
+    <Compile Include="nilnul0\num\real_\Quotient1.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\op_\%28retiring\CombineI.cs" />
+    <Compile Include="nilnul0\num\Real2.cs" />
+    <Compile Include="op_\binary_\Multi.cs" />
+    <Compile Include="IntervalI.cs" />
+    <Compile Include="interval_\ClopenI.cs" />
+    <Compile Include="interval_\clopen_\CloseLeftI.cs" />
+    <Compile Include="interval_\clopen_\closeLeft_\RightInf.cs" />
+    <Compile Include="interval_\clopen_\closeLeft_\rightInf_\LeftZero.cs" />
+    <Compile Include="nilnul0\num\quotient\be_\Positive.cs" />
+    <Compile Include="nilnul0\num\real_\quotient_\Doubl.cs" />
+    <Compile Include="nilnul0\num\real_\Positive.cs" />
+    <Compile Include="nilnul0\num\real_\positive\stream_\TetrationOfSqrtTwo - Copy.cs" />
+    <Compile Include="%28tuple%29\trio\DuoF.cs" />
+    <Compile Include="%28tuple%29\trio\duo\InnerProduct.cs" />
+    <Compile Include="%28tuple%29\tuple\combine_\Multi.cs" />
+    <Compile Include="VectorI.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\Max.cs" />
+    <Compile Include="str\to_\scalar_\aggregate_\Min.cs" />
+    <Compile Include="op_\binary_\Minus.cs" />
+    <Compile Include="vec\combine_\Minus.cs" />
+    <Compile Include="vec\co\Variance.cs" />
+    <Compile Include="Interval.cs" />
+    <Compile Include="Intervals.cs" />
+    <Compile Include="intervals\BeI.cs" />
+    <Compile Include="intervals\be_\Chain.cs" />
+    <Compile Include="intervals_\Empty.cs" />
+    <Compile Include="intervals_\Started.cs" />
+    <Compile Include="intervals_\started\BeI.cs" />
+    <Compile Include="intervals_\started\be_\Chain.cs" />
+    <Compile Include="intervals_\started\be_\chain\Vow.cs" />
+    <Compile Include="intervals_\started\EdI.cs" />
+    <Compile Include="intervals_\started\ed_\Chain.cs" />
+    <Compile Include="intervals_\started\VowI.cs" />
+    <Compile Include="intervals_\started_\chain\FuncI.cs" />
+    <Compile Include="interval\Func.cs" />
+    <Compile Include="interval\FuncsI.cs" />
+    <Compile Include="interval\funcs\BeI.cs" />
+    <Compile Include="interval\funcs\be_\PieceWise.cs" />
+    <Compile Include="interval\_func_\Compute.cs" />
+    <Compile Include="interval\_func_\DomainI.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\op_\binary_\Minus.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\op_\ConvertI.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\op_\BinaryI.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\op_\binary_\Multi.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\op_\unary_\Poly.cs" />
+    <Compile Include="op_\unary_\_neg\Ret.cs" />
+    <Compile Include="Op.cs" />
+    <Compile Include="nilnul0\num\real_\positive\cast_\ln_\_byReverseExp\Ret.cs" />
+    <Compile Include="op_\_unary_\NewFolder1\UnaryI.cs" />
+    <Compile Include="op_\_unary_\RetRealOnRealI.cs" />
+    <Compile Include="Parse.cs" />
+    <Compile Include="Pred.cs" />
+    <Compile Include="pred_\equation_\Polynomial.cs" />
+    <Compile Include="pred_\equation_\polynomial\sln_\Galois.cs" />
+    <Compile Include="Re.cs" />
+    <Compile Include="parse_\DoubleFroTxt.cs" />
+    <Compile Include="nilnul0\num\single\BeI.cs" />
+    <Compile Include="nilnul0\num\dbl\%28retiring\Eq.cs" />
+    <Compile Include="be\be\GeOne.cs" />
+    <Compile Include="nilnul0\num\dbl\Co.cs" />
+    <Compile Include="nilnul0\num\dbl\co\BeI.cs" />
+    <Compile Include="nilnul0\num\dbl\co\be_\Le.cs" />
+    <Compile Include="nilnul0\num\dbl\co\be_\Lt.cs" />
+    <Compile Include="nilnul0\num\dbl\co\ComparerI.cs" />
+    <Compile Include="nilnul0\num\dbl\co\comparer_\ByX.cs" />
+    <Compile Include="nilnul0\num\dbl\co\Eq.cs" />
+    <Compile Include="%28eq\%28eq\Eq.cs" />
+    <Compile Include="convert_\op_\CubicRoot.cs" />
+    <Compile Include="convert_\square~\NewFolder1\SquareX.cs" />
+    <Compile Include="nilnul0\num\dbl\re\Eq_leEpsilon.cs" />
+    <Compile Include="nilnul0\num\dbl\OpI.cs" />
+    <Compile Include="convert_\op_\Inverse.cs" />
+    <Compile Include="convert_\op_\Cubic.cs" />
+    <Compile Include="convert_\square~\Square.cs" />
+    <Compile Include="nilnul0\num\dbl\co\op_\Div.cs" />
+    <Compile Include="co\be_\Powable.cs" />
+    <Compile Include="ExtI.cs" />
+    <Compile Include="ext\Border.cs" />
+    <Compile Include="ext\BorderI.cs" />
+    <Compile Include="ext\border\comparer_\Upper.cs" />
+    <Compile Include="ext\border\comparer_\Lower.cs" />
+    <Compile Include="ext\border\Duo.cs" />
+    <Compile Include="ext\border\co\BeI.cs" />
+    <Compile Include="ext\border\co\be_\Interval.cs" />
+    <Compile Include="ext\border\co\be_\NoExtrem.cs" />
+    <Compile Include="ext\border\co\be_\NonEmpty.cs" />
+    <Compile Include="ext\border\co\be_\Singleton.cs" />
+    <Compile Include="ext\border\co\be_\Spanned.cs" />
+    <Compile Include="ext\border\co\Contain.cs" />
+    <Compile Include="ext\Comparer.cs" />
+    <Compile Include="ext\Interval.cs" />
+    <Compile Include="ext_\Bare.cs" />
+    <Compile Include="nilnul0\num\dbl\Rel.cs" />
+    <Compile Include="nilnul0\num\dbl\rel\BeI.cs" />
+    <Compile Include="nilnul0\num\dbl\rel\be_\Func.cs" />
+    <Compile Include="nilnul0\num\dbl\rel\be_\FuncSeeded.cs" />
+    <Compile Include="nilnul0\num\dbl\rel\be_\Seeded.cs" />
+    <Compile Include="nilnul0\num\dbl\str\%28retiring\Sum - 复制.cs" />
+    <Compile Include="nilnul0\num\dbl\str\aggregate_\Sum.cs" />
+    <Compile Include="nilnul0\num\dbl\str\aggregate_\Product.cs" />
+    <Compile Include="nilnul0\num\dbl\str\Col.cs" />
+    <Compile Include="nilnul0\num\dbl\str_\enumerable\BeI.cs" />
+    <Compile Include="nilnul0\num\dbl\str_\enumerable\be_\StartedDif.cs" />
+    <Compile Include="nilnul0\num\dbl\str_\enumerable\be_\Started.cs" />
+    <Compile Include="nilnul0\num\dbl\str_\enumerable\be_\Distrinct.cs" />
+    <Compile Include="nilnul0\num\dbl\str_\enumerable_\startedDif\op_\Sort.cs" />
+    <Compile Include="nilnul0\num\dbl\str_\enumerable_\startedDif\op_\sort_\ByDefault.cs" />
+    <Compile Include="bound_\Neighbor.cs" />
+    <Compile Include="%28bound\Bound.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\seq_\Started.cs" />
+    <Compile Include="nilnul0\num\real_\tau\Pi.cs" />
+    <Compile Include="nilnul0\num\single\be\En.cs" />
+    <Compile Include="nilnul0\num\single\be_\NonNeg.cs" />
+    <Compile Include="nilnul0\num\single\Comparer.cs" />
+    <Compile Include="%28rel\RelI.cs" />
+    <Compile Include="%28stream\stream_\TetrationOfSqrtTwo.cs" />
+    <Compile Include="%28stream\stream_\sqrt_1plus__recur.cs" />
+    <Compile Include="nilnul0\num\real_\_euler\Series.cs" />
+    <Compile Include="nilnul0\num\quotient\be_\NonNeg.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\Arg.cs" />
+    <Compile Include="nilnul0\num\real_\nonneg\OpI.cs" />
+    <Compile Include="%28stream\stream_\RecurSqrtTwo.cs" />
+    <Compile Include="nilnul0\num\quotient\be_\NoZero.cs" />
+    <Compile Include="nilnul0\num\real_\Nonnil.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\op_\unary_\Square.cs" />
+    <Compile Include="Arg.cs" />
+    <Compile Include="ArgArg1.cs" />
+    <Compile Include="%28border\border\co\be_\Single.cs" />
+    <Compile Include="%28border\border\co\be_\Nonempty.cs" />
+    <Compile Include="%28border\border\Eq.cs" />
+    <Compile Include="co_\divisible\Div.cs" />
+    <Compile Include="nilnul0\num\quotient\be_\NoApproachZero.cs" />
+    <Compile Include="re_\Gt.cs" />
+    <Compile Include="re_\Ge.cs" />
+    <Compile Include="re_\Le.cs" />
+    <Compile Include="re_\Lt.cs" />
+    <Compile Include="%28stream\stream_\SliderI.cs" />
+    <Compile Include="%28stream\stream_\slider\op_\binary_\_MultiX.cs" />
+    <Compile Include="%28stream\stream_\slider\op_\binary_\_multi\Of.cs" />
+    <Compile Include="%28stream\stream_\slider\op_\unary_\_ScaleX.cs" />
+    <Compile Include="%28stream\stream_\slider\op_\unary_\_scale\Of.cs" />
+    <Compile Include="%28stream\stream_\slider\cumulus_\SeriesI.cs" />
+    <Compile Include="%28stream\stream_\slider\_call\ArgArg1.cs" />
+    <Compile Include="%28stream\stream_\slider\_call\Arg.cs" />
+    <Compile Include="%28stream\stream_\slider\op_\unary_\_alternate\Alter.cs" />
+    <Compile Include="%28stream\stream_\slider_\Bernoulli.cs" />
+    <Compile Include="%28stream\stream_\slider_\Geometric.cs" />
+    <Compile Include="%28stream\stream_\slider_\geometric_\PolyOdd.cs" />
+    <Compile Include="%28stream\stream_\slider_\poly\series_\convergent_\_sin\Slider.cs" />
+    <Compile Include="%28stream\stream_\slider_\Quotient.cs" />
+    <Compile Include="SortedSet.cs" />
+    <Compile Include="theorem_\equation_\BrahmaguptaFibonacci.cs" />
+    <Compile Include="theorem_\equation_\Euler.cs" />
+    <Compile Include="to_\Radix.cs" />
+    <Compile Include="nilnul0\num\real_\quotient\Square.cs" />
+    <Compile Include="be\be\Normal.cs" />
+    <Compile Include="nilnul0\num\dbl_\normal\Duo.cs" />
+    <Compile Include="nilnul0\num\dbl_\normal\str\Geometric.cs" />
+    <Compile Include="nilnul0\num\dbl_\normal\str\geometric\HeadOne.cs" />
+    <Compile Include="%28expr\expr\no\Call.cs" />
+    <Compile Include="nilnul0\num\real_\nonnil\op_\unary_\Inverse.cs" />
+    <Compile Include="%28border\Border.cs" />
+    <Compile Include="%28border\border\Duo1.cs" />
+    <Compile Include="%28border\border\co\Be.cs" />
+    <Compile Include="%28border\border\co\be_\Spanned.cs" />
+    <Compile Include="co\be\InferedEq.cs" />
+    <Compile Include="%28eq\Eq.cs" />
+    <Compile Include="be\be\NoNaN.cs" />
+    <Compile Include="be\%28retiring\Normal.cs" />
+    <Compile Include="be\be\PositiveX2.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\bound\CompareLower.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\bound\couple\be\has\Intersect.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\bound\couple\be\Interval.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\bound\couple\be\NoExtreme.cs" />
+    <Compile Include="%28continum%29\Continuum.cs" />
+    <Compile Include="%28tuple%29\Duo.cs" />
+    <Compile Include="%28tuple%29\Trio.cs" />
+    <Compile Include="%28tuple%29\Quo.cs" />
+    <Compile Include="%28var\var\set\_naming\Naming.cs" />
+    <Compile Include="%28var\var\str_\sans0Started_\Started.cs" />
+    <Compile Include="%28var\var\str_\sans0Started_\Sans.cs" />
+    <Compile Include="Cfg.cs" />
+    <Compile Include="comp\Comparer.cs" />
+    <Compile Include="nilnul0\num\dbl\%28retiring\!retiring\Eq.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\Bound.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\bound\Couple.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\bound\couple\be\Has.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\bound\couple\be\BoundedHaving.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\bound\couple\op\Intersect.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\Eq.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\Ord.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\Interval3.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\interval\duo\MutualPosition.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\interval\Eq.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\interval\op\Intersect.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\interval\S.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\interval\s\Collapse.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\interval\s\disjoint\Comparer.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\interval\s\disjoint\ordered\Collapse.cs" />
+    <Compile Include="nilnul0\num\dbl_\noNaN\Border.cs" />
+    <Compile Include="nilnul0\num\dbl_\noNaN\border\Duo.cs" />
+    <Compile Include="nilnul0\num\dbl_\noNaN\border\duo\b\Has.cs" />
+    <Compile Include="nilnul0\num\dbl_\noNaN\border\Upper.cs" />
+    <Compile Include="nilnul0\num\dbl_\noNaN\border\Lower.cs" />
+    <Compile Include="nilnul0\num\dbl_\noNaN\Comparer.cs" />
+    <Compile Include="nilnul0\num\dbl_\noNaN\range\b\Bounded.cs" />
+    <Compile Include="convert_\square~\SquareX.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\_ext\Literal.cs" />
+    <Compile Include="%28tuple%29\duo\Cross.cs" />
+    <Compile Include="HeadedS.cs" />
+    <Compile Include="IrrationalI.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\n2b\Delegate.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\n2b\Real.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\n2b\RealI.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\n2b\RealI2.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\n2b\TailA.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\n2b\TailI.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\tail\Combosite.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\tail\Literal.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\tail\Periodic.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\tail\Zero.cs" />
+    <Compile Include="nilnul0\num\real_\nonnil\str\HarmonicSum.cs" />
+    <Compile Include="op_\unary_\Negate.cs" />
+    <Compile Include="nilnul0\num\real_\positive\op\Inverse.cs" />
+    <Compile Include="nilnul0\num\real_\positive\seed\op\HarmonicMean.cs" />
+    <Compile Include="convert_\op_\CubicX.cs" />
+    <Compile Include="nilnul0\num\dbl_\GoldenRatio.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\Interval2.cs" />
+    <Compile Include="nilnul0\num\dbl\re\LessThanOrEqualTo.cs" />
+    <Compile Include="nilnul0\num\dbl_\PositiveX.cs" />
+    <Compile Include="nilnul0\num\dbl_\NonNegativeX2.cs" />
+    <Compile Include="convert_\SquareX.cs" />
+    <Compile Include="nilnul0\num\dbl\str\Sum.cs" />
+    <Compile Include="%28func%29\funcs\ExpSum.cs" />
+    <Compile Include="func_\unary_\PolyFunc.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\ext\ClosedInterval.cs" />
+    <Compile Include="MakeAccurateI.cs" />
+    <Compile Include="%28set\set_\seeded\op\Root_MeanSquare.cs" />
+    <Compile Include="%28stream\StreamI.cs" />
+    <Compile Include="%28stream\stream\NN.cs" />
+    <Compile Include="%28stream\stream_\slider_\EulerConstant.cs" />
+    <Compile Include="%28bound\%28retiring\BoundOfDouble.cs" />
+    <Compile Include="nilnul0\num\real_\recurFrac\RecurFraction.cs" />
+    <Compile Include="nilnul0\num\real_\recurFrac\Tail.cs" />
+    <Compile Include="%28set\set_\seeded\choice_\Max.cs" />
+    <Compile Include="%28set\set_\seeded\choice_\Min.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\N2BFunc.cs" />
+    <Compile Include="nilnul0\num\real_\_flooredTail\n2b\Zero.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="nilnul0\num\dbl_\PositiveX2.cs" />
+    <Compile Include="nilnul0\num\property\Positive.cs" />
+    <Compile Include="%28set\set\op\SumX.cs" />
+    <Compile Include="to_\Round.cs" />
+    <Compile Include="Phrase.cs" />
+    <Compile Include="Trio.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\_ext\ExtI.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\_ext\_bound\BoundInDouble.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\_ext\Inf.cs" />
+    <Compile Include="nilnul0\num\dbl\%28ext\_ext\NegInf.cs" />
+    <Compile Include="_vector\Dimension.cs" />
+    <Compile Include="VowI.cs" />
+    <Compile Include="vow\Ee.cs" />
+    <Compile Include="vow\NewFolder1\En.cs" />
+    <Compile Include="_calc\Arg.cs" />
+    <Compile Include="_calc\ArgArg1.cs" />
+    <Compile Include="_calc\_call_\ArgArg1.cs" />
+    <Compile Include="_calc\_call_\Arg.cs" />
+    <Compile Include="%28stream\stream_\slider\_series_\NextAugendI%28T.cs" />
+    <Compile Include="%28stream\stream_\slider\_series_\_nextAugend_\AugendI%28T.cs" />
+    <Compile Include="_collection_\Contain.cs" />
+    <Compile Include="_pred_\BlankI.cs" />
+    <Compile Include="_seq\scroll_\Newly.cs" />
+    <Compile Include="_seq\scroll_\Morph.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="%28border\%28retiring\border\co\vow_\" />
+    <Folder Include="%28border\%28retiring\border_\" />
+    <Folder Include="%28bound\bound\vs_\" />
+    <Folder Include="%28bound\order\" />
+    <Folder Include="%28expr\expr\co\be\" />
+    <Folder Include="%28expr\expr\co_\" />
+    <Folder Include="%28expr\expr\re_\equiv\" />
+    <Folder Include="%28func%29\_funcS\" />
+    <Folder Include="%28set\set_\sed\" />
+    <Folder Include="%28set\set_\seeded\op_\" />
+    <Folder Include="%28set\set_\seeded\to_\_x\" />
+    <Folder Include="%28sign\sign_\" />
+    <Folder Include="%28stream\mesh\clonable\" />
+    <Folder Include="%28stream\mesh\_transpose\_ret\" />
+    <Folder Include="%28stream\stream\be\vow_\beDefault_\" />
+    <Folder Include="%28stream\stream\be_\NewFolder1\" />
+    <Folder Include="%28stream\stream\be_\piable\_vow\" />
+    <Folder Include="%28stream\stream\be_\_convergent\theorem_\_sandwichTheorem\" />
+    <Folder Include="%28stream\stream\co_\" />
+    <Folder Include="%28stream\stream\op_\binary_\" />
+    <Folder Include="%28stream\stream\_combine\ret_\" />
+    <Folder Include="%28stream\stream_\bounded_\cauchy\" />
+    <Folder Include="%28stream\stream_\convergent\co\alesce_\" />
+    <Folder Include="%28stream\stream_\piable\pi_\" />
+    <Folder Include="%28stream\stream_\piable\stream_\" />
+    <Folder Include="%28stream\stream_\slider\op_\unary_\_scale\of_\" />
+    <Folder Include="%28stream\stream_\slider\series_\ln_\" />
+    <Folder Include="%28stream\stream_\slider\series_\_ln\terms\" />
+    <Folder Include="%28stream\stream_\slider\str\" />
+    <Folder Include="%28stream\stream_\slider\subsume_\exp_\" />
+    <Folder Include="%28stream\stream_\slider_\arithmetic_\decre\" />
+    <Folder Include="%28stream\stream_\slider_\geometic\cumulus_\sum_\cauchy\" />
+    <Folder Include="%28stream\stream_\slider_\geometric_\cauchy\" />
+    <Folder Include="%28stream\stream_\slider_\poly\series\" />
+    <Folder Include="%28stream\stream_\slider_\_eulerConst\" />
+    <Folder Include="%28stream\stream_\_convergency\" />
+    <Folder Include="%28stream\stream_\_convergent_\_approach_\" />
+    <Folder Include="%28tuple%29\solo\" />
+    <Folder Include="%28tuple%29\tuple\duo\" />
+    <Folder Include="%28var\var\tupl_\" />
+    <Folder Include="accumulate_\" />
+    <Folder Include="be_\leOne_\" />
+    <Folder Include="be_\limit_\" />
+    <Folder Include="be_\nonneg\nonneg\vow\" />
+    <Folder Include="be_\_positive\" />
+    <Folder Include="bound_\centered\" />
+    <Folder Include="bound_\centered_\nil_\" />
+    <Folder Include="bound_\closed\be\" />
+    <Folder Include="bound_\closed\be_\spanned\" />
+    <Folder Include="bound_\closed_\nonneg_\" />
+    <Folder Include="bound_\open\biject_\" />
+    <Folder Include="bound_\spanned\" />
+    <Folder Include="bound_\spanned_\disengaged\innerOvDiameter\" />
+    <Folder Include="combine_\add\" />
+    <Folder Include="comp\comp\dbl\" />
+    <Folder Include="convert_\arctg_\ofQuotient_\" />
+    <Folder Include="co\alesce_\min\" />
+    <Folder Include="co\band\" />
+    <Folder Include="co\be_\co\" />
+    <Folder Include="co\re_\" />
+    <Folder Include="co_\divisible\bind_\" />
+    <Folder Include="co_\nonegPos\" />
+    <Folder Include="co_\powable\" />
+    <Folder Include="co_\starT_\nonneg_\" />
+    <Folder Include="co_\starT_\positive\pow_\byRadicRealIndexBoundQuotient\" />
+    <Folder Include="co_\starT_\positive\_pow\ret_\" />
+    <Folder Include="co_\starT_\positive_\neOne_\enD_\positive\_log\_ofPositiveQuotients\ret_\" />
+    <Folder Include="equation\" />
+    <Folder Include="expr_\algebraic\frac\phrase_\nilEmpty_\" />
+    <Folder Include="expr_\call_\binary_\" />
+    <Folder Include="expr_\call_\unary_\poly_\" />
+    <Folder Include="expr_\_algebraic\pows\prod\scaleds\sum\" />
+    <Folder Include="expr_\_algebraic\pows\prod\scaled_\" />
+    <Folder Include="expr_\_algebraic\pows\prod\_scaled\" />
+    <Folder Include="expr_\_algebraic\pows\prod\_scaled_\" />
+    <Folder Include="expr_\_algebraic\pows\re_\" />
+    <Folder Include="ext\border\co\vow_\dwelled\" />
+    <Folder Include="fro_\" />
+    <Folder Include="func_\bijective_\" />
+    <Folder Include="func_\eg\" />
+    <Folder Include="intervals_\started_\chain\_func_\" />
+    <Folder Include="nilnul0\bit\expr_\real_\" />
+    <Folder Include="nilnul0\num\%28empty\" />
+    <Folder Include="nilnul0\num\%28real_nestedBound~\" />
+    <Folder Include="nilnul0\num\dbl\%28ext\ext\interval\set\" />
+    <Folder Include="nilnul0\num\dbl\eq_\" />
+    <Folder Include="nilnul0\num\dbl\no\" />
+    <Folder Include="nilnul0\num\dbl\op\" />
+    <Folder Include="nilnul0\num\dbl\set\" />
+    <Folder Include="nilnul0\num\dbl\str_\enumerable\op_\" />
+    <Folder Include="nilnul0\num\dbl_\normal\duo\" />
+    <Folder Include="nilnul0\num\integer\" />
+    <Folder Include="nilnul0\num\quotient\be_\positive\vow\" />
+    <Folder Include="nilnul0\num\quotient\stream_\slider\cumulus_\prod_\" />
+    <Folder Include="nilnul0\num\quotient\stream_\slider_\one__over__one_minus_primeSq\cumulus_\prod_\" />
+    <Folder Include="nilnul0\num\real_\flooredTail\" />
+    <Folder Include="nilnul0\num\real_\fro_\" />
+    <Folder Include="nilnul0\num\real_\nonNegs\" />
+    <Folder Include="nilnul0\num\real_\nonneg\of\" />
+    <Folder Include="nilnul0\num\real_\nonneg\op_\unary_\root~\root~\" />
+    <Folder Include="nilnul0\num\real_\nonneg\op_\unary_\sqrt\" />
+    <Folder Include="nilnul0\num\real_\nonneg\to_\" />
+    <Folder Include="nilnul0\num\real_\nonnil\nonzero\" />
+    <Folder Include="nilnul0\num\real_\nonnil\nonZero_\" />
+    <Folder Include="nilnul0\num\real_\positives\" />
+    <Folder Include="nilnul0\num\real_\positive\cast_\ln_\_byReverseExp\NewFolder1\" />
+    <Folder Include="nilnul0\num\real_\positive\cast_\ln_\_ofQuotient\" />
+    <Folder Include="nilnul0\num\real_\positive\cast_\sup\" />
+    <Folder Include="nilnul0\num\real_\positive\cast_\sup_\" />
+    <Folder Include="nilnul0\num\real_\positive\op_\unary_\pow~\" />
+    <Folder Include="nilnul0\num\real_\positive\positive\" />
+    <Folder Include="nilnul0\num\real_\positive\to_\" />
+    <Folder Include="nilnul0\num\real_\positive~\" />
+    <Folder Include="nilnul0\num\real_\quotient\duo\" />
+    <Folder Include="nilnul0\num\real_\quotient\op\" />
+    <Folder Include="nilnul0\num\real_\quotient\op_\binary_\%28retiring\" />
+    <Folder Include="nilnul0\num\real_\quotient\op_\unary_\%28retiring\" />
+    <Folder Include="nilnul0\num\real_\tau_\recurFrac\" />
+    <Folder Include="nilnul0\num\_real_\_approach_\" />
+    <Folder Include="nilnul0\obj\_metric\_unit_\" />
+    <Folder Include="nonneg\seed\op\" />
+    <Folder Include="op_\nary_\" />
+    <Folder Include="op_\unary\calced\" />
+    <Folder Include="op_\unary_\arctg_\ofAbsCircaOne_\" />
+    <Folder Include="op_\unary_\arctg_\_byInverse\ret_\NewFolder1\" />
+    <Folder Include="op_\unary_\bisect\recur\" />
+    <Folder Include="op_\unary_\cos_\" />
+    <Folder Include="op_\unary_\injective_\upward\_inverse\_ret\" />
+    <Folder Include="op_\unary_\negate_\" />
+    <Folder Include="op_\unary_\poly_\powPlural_\" />
+    <Folder Include="op_\unary_\scale_\" />
+    <Folder Include="op_\unary_\shift_\" />
+    <Folder Include="op_\unary_\_arctg\" />
+    <Folder Include="op_\unary_\_poly\" />
+    <Folder Include="op_\unary_\_scale\ret_\ret_\" />
+    <Folder Include="op_\unary_\_shift\_shift\" />
+    <Folder Include="op_\upward\" />
+    <Folder Include="op_\_unary\" />
+    <Folder Include="phrase~\NewFolder1\" />
+    <Folder Include="phrase~\to_\" />
+    <Folder Include="pred_\equation_\polynomial_\" />
+    <Folder Include="re_\approx_\beNil_\" />
+    <Folder Include="seq_\str_\_poly\" />
+    <Folder Include="space\vector\" />
+    <Folder Include="str\be\vow\" />
+    <Folder Include="str\to_\scalar_\accumulate_\" />
+    <Folder Include="str\to_\scalar_\aggregate_\%28retiring\NewFolder1\NewFolder1\" />
+    <Folder Include="str\to_\scalar_\aggregate_\%28retiring\_x\" />
+    <Folder Include="str_\axisal_\unital_\std\" />
+    <Folder Include="str_\reals_\started\to_\" />
+    <Folder Include="vec\be_\unitary_\" />
+    <Folder Include="vec\co\to_\scalar\" />
+    <Folder Include="vec\co\to_\scalar_\" />
+    <Folder Include="vec\str\to_\" />
+    <Folder Include="vec_\co\co\" />
+    <Folder Include="vec_\quad\co\" />
+    <Folder Include="vec_\quad_\axial\" />
+    <Folder Include="vec_\quad_\axial_\unial_\pos\" />
+    <Folder Include="vec_\tro\co\" />
+    <Folder Include="vec_\tro_\basis\" />
+    <Folder Include="vec_\tro_\basis_\" />
+    <Folder Include="vec_\unial\" />
+    <Folder Include="vec_\unial_\axial_\flipped_\" />
+    <Folder Include="vec_\unial_\std_\" />
+    <Folder Include="_seq\_scroll_\" />
+    <Folder Include="_space\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="PostBuildMacros">
+    <GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
+      <Output TaskParameter="Assemblies" ItemName="Targets" />
+    </GetAssemblyIdentity>
+    <ItemGroup>
+      <VersionNumber Include="@(Targets->'%(Version)')" />
+      <MajorMinor Include="$([System.Text.RegularExpressions.Regex]::Replace(&quot;%(Targets.Version)&quot;, &quot;^([^\.]+)\.([^\.]+)(.*)$&quot;, &quot;$1.$2&quot;))" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <nilnulTime>$([System.DateTime]::UtcNow.ToString("yyMMddHHmmss"))</nilnulTime>
+    <nilnulPattern4date>^.{6}</nilnulPattern4date>
+    <nilnulDate>$([System.Text.RegularExpressions.Regex]::Match($(nilnulTime), $(nilnulPattern4date)))</nilnulDate>
+    <nilnulPattern4clock>.{6}$</nilnulPattern4clock>
+    <nilnulClock>$([System.Text.RegularExpressions.Regex]::Match($(nilnulTime), $(nilnulPattern4clock)))</nilnulClock>
+    <nilnulClockCollapsed>$(nilnulClock.TrimStart('0'))</nilnulClockCollapsed>
+    <_nilnulClockPrefixed>.$(nilnulClockCollapsed)</_nilnulClockPrefixed>
+    <nilnulClockPrefixed>$(_nilnulClockPrefixed.TrimEnd('.'))</nilnulClockPrefixed>
+    <nilnulPatchRevision>$(nilnulDate)$(nilnulClockPrefixed)</nilnulPatchRevision>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEventDependsOn>
+	$(PostBuildEventDependsOn);
+	PostBuildMacros;
+</PostBuildEventDependsOn>
+    <PostBuildEvent>echo ConfigurationName is $(ConfigurationName)
+if $(ConfigurationName) == Release (
+	"NuGet.exe" pack "$(ProjectPath)" -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)
+	"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).nupkg -SkipDuplicate -Source local
+	"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).nupkg -SkipDuplicate -Source my
+) ELSE (
+	if  $(ConfigurationName)==Symbol (
+		"NuGet.exe" pack "$(ProjectPath)" -Symbols -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).symbols.nupkg -SkipDuplicate -Source local
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).symbols.nupkg -SkipDuplicate -Source my
+	)
+	if  $(ConfigurationName)==Nuget (
+		"NuGet.exe" pack "$(ProjectPath)"  -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).nupkg -SkipDuplicate -Source nuget.org
+	)
+	if  $(ConfigurationName)==Dev2nuget (
+		"NuGet.exe" pack "$(ProjectPath)"  -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)-dev
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision)-dev.nupkg -SkipDuplicate -Source nuget.org
+	)
+)</PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

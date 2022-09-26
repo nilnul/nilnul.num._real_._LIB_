@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nilnul.num._real_._LIB_", "nilnul.num._real_._LIB_.csproj", "{69340F18-A58C-407F-B193-C08ED887C622}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Hbue40|Any CPU = Hbue40|Any CPU
+		PreferChinese|Any CPU = PreferChinese|Any CPU
+		Release_PreferChinese|Any CPU = Release_PreferChinese|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69340F18-A58C-407F-B193-C08ED887C622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69340F18-A58C-407F-B193-C08ED887C622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69340F18-A58C-407F-B193-C08ED887C622}.Hbue40|Any CPU.ActiveCfg = Hbue40|Any CPU
+		{69340F18-A58C-407F-B193-C08ED887C622}.Hbue40|Any CPU.Build.0 = Hbue40|Any CPU
+		{69340F18-A58C-407F-B193-C08ED887C622}.PreferChinese|Any CPU.ActiveCfg = PreferChinese|Any CPU
+		{69340F18-A58C-407F-B193-C08ED887C622}.PreferChinese|Any CPU.Build.0 = PreferChinese|Any CPU
+		{69340F18-A58C-407F-B193-C08ED887C622}.Release_PreferChinese|Any CPU.ActiveCfg = Release_PreferChinese|Any CPU
+		{69340F18-A58C-407F-B193-C08ED887C622}.Release_PreferChinese|Any CPU.Build.0 = Release_PreferChinese|Any CPU
+		{69340F18-A58C-407F-B193-C08ED887C622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69340F18-A58C-407F-B193-C08ED887C622}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {149B06A3-08D1-4D45-875F-CFB351B2184A}
+	EndGlobalSection
+EndGlobal
