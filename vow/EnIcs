@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace nilnul.num.real.vow
+{
+	public class En1<TVow> : nilnul.obj.vow.En<nilnul.num.RealI6, TVow>
+		where TVow : nilnul.num.real.VowI1, new()
+	{
+		public En1(num.RealI6 val) : base(val)
+		{
+		}
+	}
+}

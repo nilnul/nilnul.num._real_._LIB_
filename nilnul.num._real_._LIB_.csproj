@@ -155,7 +155,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\nilnul.num.real._func_\_TEST_\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nilnul.collection_._discrete_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230">
       <HintPath>..\_TEST_(Git\packages\nilnul.collection_._discrete_._LIB_.1.1.220728.140313\lib\net48\nilnul.collection_._discrete_._LIB_.dll</HintPath>
@@ -168,10 +168,10 @@
       <HintPath>..\_TEST_(Git\packages\nilnul.num._quotient_._LIB_.1.1.220926.131208\lib\net481\nilnul.num._quotient_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul._bit_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
-      <HintPath>..\_TEST_(Git\packages\nilnul._bit_._LIB_.1.1.220822.32314\lib\net48\nilnul._bit_._LIB_.dll</HintPath>
+      <HintPath>..\..\nilnul.num.real._func_\_TEST_\packages\nilnul._bit_._LIB_.1.1.221129.150825\lib\net481\nilnul._bit_._LIB_.dll</HintPath>
     </Reference>
-    <Reference Include="nilnul._character_._LIB_, Version=2.1.8272.35271, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
-      <HintPath>..\_TEST_(Git\packages\nilnul._character_._LIB_.2.1.220825.113426\lib\net481\nilnul._character_._LIB_.dll</HintPath>
+    <Reference Include="nilnul._character_._LIB_, Version=2.1.8387.39356, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\nilnul.num.real._func_\_TEST_\packages\nilnul._character_._LIB_.2.1.221218.135114\lib\net481\nilnul._character_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul._num_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
       <HintPath>..\_TEST_(Git\packages\nilnul._num_._LIB_.1.1.220826.15831\lib\net481\nilnul._num_._LIB_.dll</HintPath>
@@ -180,7 +180,7 @@
       <HintPath>..\_TEST_(Git\packages\nilnul._num_._LINQ_.1.1.220825.155237\lib\net481\nilnul._num_._LINQ_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul._obj_._LIB_, Version=1.2.0.0, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
-      <HintPath>..\_TEST_(Git\packages\nilnul._obj_._LIB_.1.2.220905.122106\lib\net481\nilnul._obj_._LIB_.dll</HintPath>
+      <HintPath>..\..\nilnul.num.real._func_\_TEST_\packages\nilnul._obj_._LIB_.1.2.221230.134914\lib\net481\nilnul._obj_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul._rel_._LIB_, Version=1.2.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
       <HintPath>..\_TEST_(Git\packages\nilnul._rel_._LIB_.1.2.220817.152548\lib\net48\nilnul._rel_._LIB_.dll</HintPath>
@@ -189,7 +189,7 @@
       <HintPath>..\_TEST_(Git\packages\nilnul._set_._LIB_.1.1.220905.140119\lib\net481\nilnul._set_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul._txt_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
-      <HintPath>..\_TEST_(Git\packages\nilnul._txt_._LIB_.1.1.220908.84230\lib\net481\nilnul._txt_._LIB_.dll</HintPath>
+      <HintPath>..\..\nilnul.num.real._func_\_TEST_\packages\nilnul._txt_._LIB_.1.1.221218.142109\lib\net481\nilnul._txt_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -232,6 +232,7 @@
     <Compile Include="be_\nily_\Thousandth4dbl.cs" />
     <Compile Include="be_\nil\anto_\ByInjected4Dbl.cs" />
     <Compile Include="be_\nil\Anto4dbl.cs" />
+    <Compile Include="bound_\centered_\Open4dbl.cs" />
     <Compile Include="bound_\closed\re\Complement4dbl.cs" />
     <Compile Include="bound_\closed\Re4dblI.cs" />
     <Compile Include="bound_\closed\ReI.cs" />
@@ -242,11 +243,14 @@
     <Compile Include="bound_\closed\re_\sup_\Proper.cs" />
     <Compile Include="bound_\closed_\CenteredDbl.cs" />
     <Compile Include="bound_\closed_\neighbor_\CenteredDbl.cs" />
+    <Compile Include="bound_\ICLosed.cs" />
     <Compile Include="bound_\INormal.cs" />
     <Compile Include="bound_\IUnial.cs" />
+    <Compile Include="bound_\Centered4dblA.cs" />
     <Compile Include="bound_\normal_\clopen_\IPotent.cs" />
     <Compile Include="bound_\normal_\clopen_\Proportion4dbl_clopen.cs" />
     <Compile Include="bound_\normal_\openClose_\Partial4dbl_openClose.cs" />
+    <Compile Include="bound_\open_\Centered4dbl.cs" />
     <Compile Include="bound_\unial_\Clopen4dbl.cs" />
     <Compile Include="bound_\unial_\Parture4dbl.cs" />
     <Compile Include="bound_\unial_\Open4dbl.cs" />
@@ -312,6 +316,7 @@
     <Compile Include="expr_\algebraic_\Bivariate.cs" />
     <Compile Include="expr_\algebraic_\Multivariate.cs" />
     <Compile Include="expr_\algebraic_\IPolynomial.cs" />
+    <Compile Include="expr_\polynomial_\IQuintic.cs" />
     <Compile Include="expr_\var_\IConstrained.cs" />
     <Compile Include="expr_\_algebraic\pows\prod\re_\Multiplic.cs" />
     <Compile Include="expr_\algebraic\Frac.cs" />
@@ -337,7 +342,7 @@
     <Compile Include="expr_\call_\%28retiring\Nary - Copy.cs" />
     <Compile Include="expr_\IAlgebraic.cs" />
     <Compile Include="expr_\ICall.cs" />
-    <Compile Include="expr_\IPoly.cs" />
+    <Compile Include="expr_\IPolynomial.cs" />
     <Compile Include="expr_\Polynomial.cs" />
     <Compile Include="expr_\AlgebraicI.cs" />
     <Compile Include="expr_\Var.cs" />
@@ -356,8 +361,8 @@
     <Compile Include="expr_\poly\co\Equation.cs" />
     <Compile Include="expr_\poly\co\equation\Solution.cs" />
     <Compile Include="expr_\poly\co\equation\solution_\Diophantine.cs" />
-    <Compile Include="expr_\poly_\Quadratic.cs" />
-    <Compile Include="expr_\poly_\Monic.cs" />
+    <Compile Include="expr_\polynomial_\Quadratic.cs" />
+    <Compile Include="expr_\polynomial_\Monic.cs" />
     <Compile Include="%28stream\Stream4dblI.cs" />
     <Compile Include="%28stream\stream_\SliderI - Copy.cs" />
     <Compile Include="bound_\Clopen.cs" />
@@ -393,6 +398,7 @@
     <Compile Include="ext\op_\unary_\Neg.cs" />
     <Compile Include="func_\BinaryI.cs" />
     <Compile Include="%28stream\stream_\bounded_\cauchy_\UnitalPowUnital.cs" />
+    <Compile Include="func_\unary_\_UnknownMultiLogUnknownX.cs" />
     <Compile Include="IProof.cs" />
     <Compile Include="IRange.cs" />
     <Compile Include="nilnul0\num\IReal.cs" />
@@ -446,8 +452,8 @@
     <Compile Include="bound_\closed\BeI.cs" />
     <Compile Include="bound_\closed\be_\Spanned.cs" />
     <Compile Include="bound_\closed_\Based.cs" />
-    <Compile Include="bound_\CenteredDbl.cs" />
-    <Compile Include="bound_\Centered.cs" />
+    <Compile Include="bound_\_CenteredDblX.cs" />
+    <Compile Include="bound_\_CenteredX.cs" />
     <Compile Include="bound_\centered_\_AcuteDblX.cs" />
     <Compile Include="bound_\centered_\Acute.cs" />
     <Compile Include="bound_\Closed.cs" />
@@ -1315,7 +1321,7 @@
     <Compile Include="%28func%29\func\op_\unary_\Derive.cs" />
     <Compile Include="func_\UnaryI.cs" />
     <Compile Include="%28func%29\Ranged.cs" />
-    <Compile Include="expr_\poly\poly\interpolate\Sylvester.cs" />
+    <Compile Include="expr_\poly\interpolate\Sylvester.cs" />
     <Compile Include="ext\border\co\be_\Dwelled.cs" />
     <Compile Include="ext\border\co\be_\dwelt\Vow.cs" />
     <Compile Include="ext\border\co\Ed.cs" />
@@ -1726,6 +1732,8 @@
     <Folder Include="expr_\algebraic\frac\phrase_\nilEmpty_\" />
     <Folder Include="expr_\call_\binary_\" />
     <Folder Include="expr_\call_\unary_\poly_\" />
+    <Folder Include="expr_\polynomial\" />
+    <Folder Include="expr_\poly\poly\" />
     <Folder Include="expr_\_algebraic\pows\prod\scaleds\sum\" />
     <Folder Include="expr_\_algebraic\pows\prod\scaled_\" />
     <Folder Include="expr_\_algebraic\pows\prod\_scaled\" />

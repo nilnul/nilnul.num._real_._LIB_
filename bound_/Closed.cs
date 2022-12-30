@@ -10,7 +10,6 @@ using R = nilnul.num.RealI;
 
 namespace nilnul.num.real.bound_
 {
-
 	static public class _ClosedX
 	{
 		static public Bound Bound(R a, R b)
