@@ -170,17 +170,21 @@ namespace nilnul.num.real.expr_._algebraic.pows.prod
 				{
 					return $"{_product}";
 				}
-				//else
-				//{
-				//	return "1";
-				//}
+				else
+				{
+					return "1";
+				}
 			}
 			if (coefAsClass ==-1)
 			{
 				
 				return $"-{_product}";
 			}
-			return $"{_coef} {_product}";
+			if (coefAsClass ==0)
+			{
+				return "0";
+			}
+			return $"{_coef}{_product}";
 			//if coef is nil, the whole of this would be eliminated by caller.
 		}
 

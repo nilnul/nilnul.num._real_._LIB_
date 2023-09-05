@@ -9,10 +9,13 @@ using R = nilnul.num.RealI;
 
 namespace nilnul.num.real.ext_
 {
+
 	public class Bare
 		: nilnul.ext_.Bare<R>
 		,
 		ExtI
+		,
+		INoninf
 	{
 		public Bare(R val) : base(val)
 		{

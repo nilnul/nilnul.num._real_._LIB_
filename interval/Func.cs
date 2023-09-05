@@ -9,6 +9,8 @@ namespace nilnul.num.real.interval
 	/// <summary>
 	/// a function the domain of which is an interval.
 	/// </summary>
+	/// alias:
+	///		map
 	public interface FuncI:_func_.DomainI, _func_.ComputeI
 	{
 

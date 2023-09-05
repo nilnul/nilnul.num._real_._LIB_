@@ -3,9 +3,11 @@
 	/// <summary>
 	/// from -1 to 1
 	/// </summary>
-	/// <see cref="bound_.INormal"/>
+	/// 
+	/// vs: <see cref="bound_.IBoolish"/>
+	///		which is from 0 to 1, whileas this is from -1;
 	//[Obsolete(nameof(INormal))]
-	public interface IUnial:INormal
+	public interface IUnial//:INormal
 	{
 
 	}

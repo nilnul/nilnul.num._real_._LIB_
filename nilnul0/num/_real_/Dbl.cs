@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace nilnul.num._real_
 {
-	
+	[Obsolete(nameof(num.Real4dblI))]
 	public interface DblI
 		
 		

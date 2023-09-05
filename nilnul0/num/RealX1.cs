@@ -128,10 +128,17 @@ namespace nilnul.num
 			r.Clamp(precision.current.lower.mark);
 
 		}
+		static public Real ToImpl(this RealI x)
+		{
+			return  Real.Ov(x);
+		}
+
+		[Obsolete(nameof(ToImpl))]
 		static public Real ToReal(this RealI x)
 		{
 			return  Real.Ov(x);
 		}
+
 
 		static public Real ToReal(this Q1 q)
 		{

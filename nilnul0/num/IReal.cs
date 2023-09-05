@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace nilnul.num
 {
-	public interface IReal
+	/// <summary>
+	/// the limit of <see cref=" nilnul.num.quotient.bound_.closed.stream_.nested_.ConvergedI"/>, which might not a quotient;
+	/// </summary>
+	public interface IReal/*:IReal0nul*/
 	{
 	}
 

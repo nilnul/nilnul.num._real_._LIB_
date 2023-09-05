@@ -8,6 +8,11 @@ using nilnul.num.quotient.radix;
 
 namespace nilnul.num.real.be_
 {
+	/// <summary>
+	/// 
+	/// </summary>
+	/// alias:
+	///		surnorm, <seealso cref="GeOne"/>
 	public class GtOne
 		:
 		BeA,

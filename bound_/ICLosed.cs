@@ -5,6 +5,10 @@
 	/// </summary>
 	/// alias:
 	///		closed
+	///		clamp
+	///		clasp
 	///		range
-	public interface ICLosed { }
+	///	vs:
+	///		<see cref="betwixt_.IClosed"/>
+	public interface ICLosed:IBound { }
 }

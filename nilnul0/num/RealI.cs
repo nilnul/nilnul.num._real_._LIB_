@@ -23,7 +23,7 @@ namespace nilnul.num
 	/// To guarantee bounds are nested, wrap this to make nilnul.num.quotient.bound.stream_.nested; we can instersect later bound with former bound to make sure later bound is nested in former ones.
 	/// </remarks>
 	///
-	//[Obsolete()]
+	[Obsolete(nameof(RealI1))]
 	public interface RealI
 		:_real_.BoundI1
 		,_real_.ClampI

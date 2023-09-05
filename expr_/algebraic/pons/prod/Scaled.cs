@@ -349,7 +349,7 @@ namespace nilnul.num.real.expr_.algebraic.pons.prod
 		)
 		{
 			return new Scaled(
-				 x._coef.ToReal() *y
+				 x._coef.ToReal() * y
 				,
 				x._product 
 			);

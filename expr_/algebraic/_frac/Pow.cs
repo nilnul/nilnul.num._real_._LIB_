@@ -13,6 +13,8 @@ namespace nilnul.num.real.expr_.algebraic._frac
 {
 	/// <summary>
 	/// </summary>
+	/// alias:
+	///		indicand
 	public class Pow
 		:
 		nilnul.obj.Box1<
@@ -28,6 +30,8 @@ namespace nilnul.num.real.expr_.algebraic._frac
 		/// <summary>
 		/// if index is nil, this can be transformed to 1.
 		/// </summary>
+		/// alias:
+		///		indic
 		public BigInteger index
 		{
 			get { return _index; }
@@ -35,6 +39,12 @@ namespace nilnul.num.real.expr_.algebraic._frac
 		}
 
 
+		/// <summary>
+		/// 
+		/// </summary>
+		/// alias:
+		///		radic
+		///		basic
 		public nilnul.num.real.expr_.VarI	basis
 		{
 			get { return boxed; }
@@ -109,7 +119,29 @@ namespace nilnul.num.real.expr_.algebraic._frac
 			);
 		}
 
-	
+		static public pows.Product operator *(Pow a, Pow b) {
+			if (a.basis == b.basis)
+			{
+				return new pows.Product(
+					new Pow(a.basis,a.index+b.index)
+				);
+			}
+			return new pows.Product(
+				a,b
+			);
+		}
+
+		static public pows.Product operator *(Pow a, real.expr_.VarI b) {
+			if (a.basis == b)
+			{
+				return new pows.Product(
+					new Pow(a.basis,a.index+1)
+				);
+			}
+			return new pows.Product(
+				a,new Pow( b)
+			);
+		}
 
 
 

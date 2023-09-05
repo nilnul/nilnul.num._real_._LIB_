@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace nilnul.num.real.expr_.algebraic.matrix_.square_
 {
+	/// <summary>
+	/// named after Alexandre-Théophile Vandermonde, is a matrix with the terms of a geometric progression in each row;
+	/// </summary>
 	static public class _VandermondeX
 	{
 		static public Algebraic[,] Of(params num.real.expr_.Var1[] vars) {

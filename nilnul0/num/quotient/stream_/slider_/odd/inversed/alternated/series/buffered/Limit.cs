@@ -9,8 +9,18 @@ using System.Threading.Tasks;
 namespace nilnul.num.quotient.stream_.slider_.odd.inversed.alternated.series.buffered
 {
 	/// <summary>
-	/// Tau/8. This is very very slow
+	/// 1-1/3 + 1/5 -1/7 +...  = Tau/8.
+	/// This is very very slow
 	/// </summary>
+	/// <remarks>
+	/// 1-1/3 + 1/5 +...
+	/// =
+	/// from 0 to 1, integrate of 1 - x^2 + x^4
+	/// =
+	/// from 0 to 1, integrate of 1/(1+x^2)
+	///
+	/// but antiderivative of 1/(1+x^2) is arctan(x)
+	/// </remarks>
 	public class Limit
 		: nilnul.obj.Box<nilnul.num.quotient.stream_.slider_.odd.inversed.alternated.series.BufferedTwo>
 		,

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace nilnul.num.real
 {
+	public interface IExt { }
 	/// <summary>
 	/// real numbers and infinity.
 	///
@@ -14,9 +15,10 @@ namespace nilnul.num.real
 	///	-----------------0--------------------->    real number
 	///			NegInf
 	/// </summary>
-	public interface ExtI
+	public interface ExtI:IExt
 	{
 	}
+
 
 	/// <summary>
 	/// operator can be defined here

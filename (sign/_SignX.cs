@@ -16,6 +16,16 @@ namespace nilnul.num.real
 			return x==0?(bool?)null: x>0;
 		}
 
+		/// <summary>
+		/// 1,0,-1
+		/// </summary>
+		/// <param name="x"></param>
+		/// <returns></returns>
+		static public int Sign(double x) {
+			return x==0?0: x>0?1:-1;
+		}
+
+
 
 
 	}

@@ -7,6 +7,12 @@ using E = nilnul.num.real.ExprI;
 
 namespace nilnul.num.real.expr_.call_.unary_
 {
+	/// <summary>
+	/// 
+	/// </summary>
+	/// alias:
+	///		ponent;
+	///			not indic which allows negative ponent;
 	public class Poly
 		:E
 	{

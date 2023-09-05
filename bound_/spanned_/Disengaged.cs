@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace nilnul.num.real.bound_.spanned_
 {
+	/// <summary>
+	/// 
+	/// </summary>
 	static public class _DisengagedX
 	{
 
@@ -20,7 +23,9 @@ namespace nilnul.num.real.bound_.spanned_
 			this nilnul.num.real.Bound1 bound_upperInfimumGeLowerSupremum
 		)
 		{
-			var outerBound = bound_upperInfimumGeLowerSupremum.Outer();
+			//var outerBound = bound_upperInfimumGeLowerSupremum.Outer();
+
+
 
 			nilnul.num.real_._positive._Clamp_ofAssumePositiveX.MakeLowerNonneg_assumePositive(
 				bound_upperInfimumGeLowerSupremum.upper.mark

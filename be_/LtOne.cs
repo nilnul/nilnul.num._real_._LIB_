@@ -8,6 +8,12 @@ using nilnul.num.quotient.radix;
 
 namespace nilnul.num.real.be_
 {
+
+	/// <summary>
+	/// 
+	/// </summary>
+	/// alias:
+	///		undernorm
 	public class LtOne
 		:
 		BeA,

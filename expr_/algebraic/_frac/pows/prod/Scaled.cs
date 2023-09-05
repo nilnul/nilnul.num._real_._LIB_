@@ -10,6 +10,11 @@ using System.Threading.Tasks;
 
 namespace nilnul.num.real.expr_.algebraic._frac.pows.prod
 {
+	/// <summary>
+	/// 
+	/// </summary>
+	/// alias:
+	///		coefed
 	public class Scaled
 		:
 		FracI

@@ -10,11 +10,13 @@ namespace nilnul.num._real_
 
 	/// <summary>
 	/// predicate the diameter needed, and clamp only once to get the desired result, as by looping it would be very time-consuming.
-	/// squeeze from an approach to appraoch to a limit.
+	/// squeeze from an stream to appraoch to a limit.
 	/// </summary>
 	public interface ClampI1:
 		//nilnul.num.quotient.bound_.closed.stream_.slider_.nested_._cauchy_.ClampI1
-		nilnul.num.quotient.bound_.closed.stream_.nested_._cauchy_.ClampI1 /*we leave this intentionally as ambiguous about whether the bound shall be closed, such that implementations can decide whether a non-closed bound can be returned and regarded (by converting) as closed. */
+		nilnul.num.quotient.bound_.closed.stream_.nested_._cauchy_.ClampI1 /*we leave this intentionally as ambiguous about whether the bound shall be closed, such that implementations can decide whether a non-closed bound can be returned and regarded (by converting) as closed.
+		                                                                    
+		                                                                    */
 	//:
 	//nilnul.num.quotient.stream_.bounded_._cauchy_.SqueezeI_boundDiameterLt	//make the boundDiameter strictly less than given para
 	{

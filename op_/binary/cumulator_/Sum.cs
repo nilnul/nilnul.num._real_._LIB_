@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace nilnul.num.real.op_.binary.cumulator_
 {
 	public class Sum :
-		Cumulator_opDefault<nilnul.num.real.op_.binary_.Add>
+			 Cumulator_opDefault<nilnul.num.real.op_.binary_.Add>
 		
 
 	{

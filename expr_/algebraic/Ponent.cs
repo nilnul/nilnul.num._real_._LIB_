@@ -10,6 +10,8 @@ namespace nilnul.num.real.expr_.algebraic
 	/// <summary>
 	/// used in factoring for <see cref="algebraic.Frac"/>
 	/// </summary>
+	/// alias:
+	///		indicant
 	public class Ponent
 	{
 		private Algebraic _basis;

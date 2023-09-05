@@ -8,9 +8,8 @@ namespace nilnul.num.real.ext_
 {
 	public interface InfI
 		:ExtI
+		,IInf
 	{
-
-
-
 	}
+
 }

@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace nilnul.num.real
 {
-	/// <summary>
-	/// like <see cref="nilnul.geometry.planar.IGrad"/>, this can be negatively oriented, erstwhile <see cref="nilnul.num.real.IBound"/> is always positively oriented.
-	/// </summary>
-	/// <see cref="nilnul.num.real.IBound"/>
+	[Obsolete(nameof(IBetwixt))]
 	public interface  IRange
+		:nilnul.obj.IRange //emptible, can be in oppsite direction; 
 	{
 	}
+
 }
