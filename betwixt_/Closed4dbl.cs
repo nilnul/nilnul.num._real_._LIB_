@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace nilnul.num.real.range_
 {
-	public class Closed4dbl:IDwelt
+	public class Closed4dbl
+		:
+		real.IBetwixt
+		//,
+		//real.betwixt_.IDwelt
 	{
 		private Real4dblI _lowerMark;
 

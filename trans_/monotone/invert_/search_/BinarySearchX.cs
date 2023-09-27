@@ -8,6 +8,7 @@ namespace nilnul.num.real.expr.equation
 	/// <summary>
 	/// the function has to monotonic.
 	/// </summary>
+	/// <see cref="nilnul.num.real.ext.trans_.grow.invert_.search_._BisectX"/>
     public partial class BinarySearchX
     {
 		/// <summary>

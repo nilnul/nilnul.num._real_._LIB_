@@ -197,7 +197,7 @@
       <HintPath>..\_TEST_(Git\packages\nilnul._bit_._LIB_.1.1.230730.133415-sym\lib\net481\nilnul._bit_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul._character_._LIB_, Version=2.1.8387.39356, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
-      <HintPath>..\_TEST_(Git\packages\nilnul._character_._LIB_.2.1.230806.55609-sym\lib\net481\nilnul._character_._LIB_.dll</HintPath>
+      <HintPath>..\_TEST_(Git\packages\nilnul._character_._LIB_.2.1.230921.130306-sym\lib\net481\nilnul._character_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul._num_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
       <HintPath>..\_TEST_(Git\packages\nilnul._num_._LIB_.1.1.230829.123111-sym\lib\net481\nilnul._num_._LIB_.dll</HintPath>
@@ -206,16 +206,16 @@
       <HintPath>..\_TEST_(Git\packages\nilnul._num_._LINQ_.1.1.230812.84946-sym\lib\net481\nilnul._num_._LINQ_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul._obj_._LIB_, Version=1.2.0.0, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
-      <HintPath>..\_TEST_(Git\packages\nilnul._obj_._LIB_.1.2.230829.94553-sym\lib\net481\nilnul._obj_._LIB_.dll</HintPath>
+      <HintPath>..\_TEST_(Git\packages\nilnul._obj_._LIB_.1.2.230927.105331-sym\lib\net481\nilnul._obj_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul._rel_._LIB_, Version=1.2.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
-      <HintPath>..\_TEST_(Git\packages\nilnul._rel_._LIB_.1.2.230813.73517-sym\lib\net481\nilnul._rel_._LIB_.dll</HintPath>
+      <HintPath>..\_TEST_(Git\packages\nilnul._rel_._LIB_.1.2.230914.142205-sym\lib\net481\nilnul._rel_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul._set_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
       <HintPath>..\_TEST_(Git\packages\nilnul._set_._LIB_.1.1.230730.135726-sym\lib\net481\nilnul._set_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul._txt_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
-      <HintPath>..\_TEST_(Git\packages\nilnul._txt_._LIB_.1.1.230811.93638-sym\lib\net481\nilnul._txt_._LIB_.dll</HintPath>
+      <HintPath>..\_TEST_(Git\packages\nilnul._txt_._LIB_.1.1.230925.84753-sym\lib\net481\nilnul._txt_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -258,31 +258,35 @@
     <Compile Include="bound_\boolish_\IPortion.cs" />
     <Compile Include="bound_\boolish_\IProper.cs" />
     <Compile Include="bound_\IBoolish.cs" />
-    <Compile Include="convert\be_\continuous_\IPiecewiseDerivable.cs" />
-    <Compile Include="convert\be_\ICadlag.cs" />
-    <Compile Include="convert\be_\ICaglad.cs" />
-    <Compile Include="convert\be_\ICallal.cs" />
-    <Compile Include="convert\be_\IContinous.cs" />
-    <Compile Include="convert\be_\IHolderContinuous.cs" />
-    <Compile Include="convert\be_\ILeftLimitable4All.cs" />
-    <Compile Include="convert\be_\ILefttContinous4All.cs" />
-    <Compile Include="convert\be_\IPiecewise.cs" />
-    <Compile Include="convert\be_\IRightContinous4All.cs" />
-    <Compile Include="convert\be_\IRightLimitable4All.cs" />
-    <Compile Include="convert_\IContinuous.cs" />
-    <Compile Include="convert_\IContinuous4everywhere.cs" />
-    <Compile Include="convert_\IPieceWiseContinuous.cs" />
-    <Compile Include="convert_\SinOfInverse.cs" />
+    <Compile Include="trans\be_\continuous_\IPiecewiseDerivable.cs" />
+    <Compile Include="trans\be_\ICadlag.cs" />
+    <Compile Include="trans\be_\ICaglad.cs" />
+    <Compile Include="trans\be_\ICallal.cs" />
+    <Compile Include="trans\be_\IContinous.cs" />
+    <Compile Include="trans\be_\IHolderContinuous.cs" />
+    <Compile Include="trans\be_\ILeftLimitable4All.cs" />
+    <Compile Include="trans\be_\ILefttContinous4All.cs" />
+    <Compile Include="trans\be_\IPiecewise.cs" />
+    <Compile Include="trans\be_\IRightContinous4All.cs" />
+    <Compile Include="trans\be_\IRightLimitable4All.cs" />
+    <Compile Include="trans_\grow\invert_\_Bisect.cs" />
+    <Compile Include="trans_\grow_\ergodic\invert_\_Bisect.cs" />
+    <Compile Include="trans_\IContinuous.cs" />
+    <Compile Include="trans_\IContinuous4everywhere.cs" />
+    <Compile Include="trans_\IPieceWiseContinuous.cs" />
+    <Compile Include="trans_\SinOfInverse.cs" />
     <Compile Include="expr_\polynomial_\%28degreE_\IDecic.cs" />
     <Compile Include="expr_\polynomial_\%28degreE_\ILinear.cs" />
     <Compile Include="expr_\polynomial_\%28degreE_\INonic.cs" />
     <Compile Include="expr_\polynomial_\%28degreE_\IOctic.cs" />
     <Compile Include="expr_\polynomial_\%28degreE_\IQuintic.cs" />
     <Compile Include="expr_\polynomial_\quartic_\IBiquadratic.cs" />
-    <Compile Include="ext\convert_\IContinuous.cs" />
-    <Compile Include="ext\convert_\IPieceWiseContinuous.cs" />
-    <Compile Include="ext\convert_\SinOfInverse.cs" />
+    <Compile Include="ext\trans_\grow\invert_\_Bisect.cs" />
+    <Compile Include="ext\trans_\IContinuous.cs" />
+    <Compile Include="ext\trans_\IPieceWiseContinuous.cs" />
+    <Compile Include="ext\trans_\SinOfInverse.cs" />
     <Compile Include="ext\func_\Ternary4dblI.cs" />
+    <Compile Include="ext\trans_\monotone_\strict\invert_\_Bisect.cs" />
     <Compile Include="ext\of_\Ternary4dblI.cs" />
     <Compile Include="IBetwixt.cs" />
     <Compile Include="IConvert.cs" />
@@ -389,10 +393,9 @@
     <Compile Include="ext\of_\unary_\sq_\Exp4dbl.cs" />
     <Compile Include="ext\of_\unary_\sq_\neg_\Exp4dbl.cs" />
     <Compile Include="func_\unary\invert_\_search\Li_.cs" />
-    <Compile Include="func_\unary_\convex\invert_\search_\IFibonachi.cs" />
-    <Compile Include="func_\unary_\monotone\invert_\search_\BinarySearchX.cs" />
-    <Compile Include="func_\unary_\monotone\invert_\search_\IBisect.cs" />
-    <Compile Include="func_\unary_\monotone\invert_\search_\_Bisect.cs" />
+    <Compile Include="trans_\convex\invert_\search_\IFibonachi.cs" />
+    <Compile Include="trans_\monotone\invert_\search_\BinarySearchX.cs" />
+    <Compile Include="trans_\monotone\invert_\search_\IBisect.cs" />
     <Compile Include="IBound.cs" />
     <Compile Include="%28expr\ExprI - Copy.cs" />
     <Compile Include="%28expr\%28retiring\ExprI.cs" />
@@ -786,14 +789,14 @@
     <Compile Include="ext_\Negative4dblI.cs" />
     <Compile Include="ext_\Positive4dblI.cs" />
     <Compile Include="ext_\Nonneg4dblI1.cs" />
-    <Compile Include="func_\unary_\IInvertible.cs" />
-    <Compile Include="func_\unary_\IMonotonic.cs" />
-    <Compile Include="func_\unary_\monotonic_\IDwindle.cs" />
-    <Compile Include="func_\unary_\monotonic_\IGrow.cs" />
-    <Compile Include="func_\unary_\monotonic_\INonstrict.cs" />
-    <Compile Include="func_\unary_\monotonic_\IStrict.cs" />
-    <Compile Include="func_\unary_\monotonic_\strict_\IDwindle.cs" />
-    <Compile Include="func_\unary_\monotonic_\strict_\IGrow.cs" />
+    <Compile Include="trans_\IInvertible.cs" />
+    <Compile Include="trans_\IMonotonic.cs" />
+    <Compile Include="trans_\monotonic_\IDwindle.cs" />
+    <Compile Include="trans_\monotonic_\IGrow.cs" />
+    <Compile Include="trans_\monotonic_\INonstrict.cs" />
+    <Compile Include="trans_\monotonic_\IStrict.cs" />
+    <Compile Include="trans_\monotonic_\strict_\IDwindle.cs" />
+    <Compile Include="trans_\monotonic_\strict_\IGrow.cs" />
     <Compile Include="IFunc.cs" />
     <Compile Include="be\Anto4dbl.cs" />
     <Compile Include="be\Anto.cs" />
@@ -975,7 +978,7 @@
     <Compile Include="ext\of_\unary_\NewFolder1\Neg.cs" />
     <Compile Include="ext_\INoninf.cs" />
     <Compile Include="func_\BinaryI.cs" />
-    <Compile Include="func_\unary_\_UnknownMultiLogUnknownX.cs" />
+    <Compile Include="trans_\_UnknownMultiLogUnknownX.cs" />
     <Compile Include="IInterval.cs" />
     <Compile Include="Interval4dbl.cs" />
     <Compile Include="interval_\IAll.cs" />
@@ -2269,7 +2272,7 @@
     <Compile Include="of_\unary_\square_\SquareX.cs" />
     <Compile Include="nilnul0\num\dbl\str\Sum.cs" />
     <Compile Include="%28func%29\funcs\ExpSum.cs" />
-    <Compile Include="func_\unary_\PolyFunc.cs" />
+    <Compile Include="trans_\PolyFunc.cs" />
     <Compile Include="nilnul0\num\dbl\%28ext\ext\ClosedInterval.cs" />
     <Compile Include="MakeAccurateI.cs" />
     <Compile Include="%28set\set_\seeded\op\Root_MeanSquare.cs" />
@@ -2344,10 +2347,6 @@
     <Folder Include="calc\re_\eq_\" />
     <Folder Include="combine_\add\" />
     <Folder Include="comp\comp\dbl\" />
-    <Folder Include="convert\be_\callal_\" />
-    <Folder Include="convert\be_\piecewise_\" />
-    <Folder Include="convert_\continuous_\uniform_\" />
-    <Folder Include="convert_\pwc_\" />
     <Folder Include="co\alesce_\min\" />
     <Folder Include="co\band\" />
     <Folder Include="co\be_\co\" />
@@ -2370,10 +2369,10 @@
     <Folder Include="expr_\_algebraic\pows\prod\_scaled_\" />
     <Folder Include="expr_\_algebraic\pows\re_\" />
     <Folder Include="ext\be_\small_\byInjected\" />
-    <Folder Include="ext\convert_\pwc_\" />
-    <Folder Include="ext\func_\unary_\monotone\invert\" />
     <Folder Include="ext\of_\str_\" />
     <Folder Include="ext\splice_\" />
+    <Folder Include="ext\trans\" />
+    <Folder Include="ext\trans_\pwc_\" />
     <Folder Include="ext\_range\border\co\vow_\dwelled\" />
     <Folder Include="ext\_range\border\co_\lower9upper\" />
     <Folder Include="fro_\" />
@@ -2382,7 +2381,7 @@
     <Folder Include="func_\bijective_\" />
     <Folder Include="func_\eg\" />
     <Folder Include="func_\unary\invert_\search_\" />
-    <Folder Include="func_\unary_\eg_\" />
+    <Folder Include="func_\unary_\" />
     <Folder Include="intervals_\started_\chain\_func_\" />
     <Folder Include="nilnul0\num\%28empty\" />
     <Folder Include="nilnul0\num\%28real_nestedBound~\" />
@@ -2528,6 +2527,11 @@
     <Folder Include="str_\axisal_\unital_\std\" />
     <Folder Include="str_\reals_\" />
     <Folder Include="str_\started\to_\scala_\" />
+    <Folder Include="trans\be_\callal_\" />
+    <Folder Include="trans\be_\piecewise_\" />
+    <Folder Include="trans_\continuous_\uniform_\" />
+    <Folder Include="trans_\eg_\" />
+    <Folder Include="trans_\pwc_\" />
     <Folder Include="vec\be_\unitary_\" />
     <Folder Include="vec\co\to_\scalar\" />
     <Folder Include="vec\co\to_\scalar_\" />
@@ -2603,6 +2607,7 @@ if $(ConfigurationName) == Release (
 	)
 	if  $(ConfigurationName)==Sym2nuget (
 		"NuGet.exe" pack "$(ProjectPath)"  -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)-sym
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision)-sym.nupkg -SkipDuplicate -Source my
 		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision)-sym.nupkg -SkipDuplicate -Source nuget.org
 	)
 )</PostBuildEvent>
