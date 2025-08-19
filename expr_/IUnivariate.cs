@@ -1,7 +1,7 @@
-﻿namespace nilnul.num.real.expr_
+namespace nilnul.num.real.expr_
 {
 	/// <summary>
-	/// with only one variable;
+	/// with only one variable|indeterminate;
 	/// eg:
 	///		3x
 	///		x^3
@@ -17,5 +17,8 @@
 	///		0^x^6
 	///		we intend to include any with one and one variable, no matter what the indic or the coefficient is;
 	/// </remarks>
+	/// alias:
+	///		unary
+	/// 
 	public interface IUnivariate { }
 }

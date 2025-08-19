@@ -27,7 +27,6 @@ namespace nilnul.num.real.be_
 		public bool be(double obj)
 		{
 			return obj >=0;
-			throw new NotImplementedException();
 		}
 	}
 }

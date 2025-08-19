@@ -17,10 +17,28 @@ namespace nilnul.num.real.be_
 		:
 		BeA,
 		nilnul.num.real.BeI
+		,
+		nilnul.num.real._be_.OfImplI
+
+		,
+		nilnul.num.real.BeI_onQuoient
+
 	{
 		public override bool be(Real x)
 		{
 			return x >1;
+		}
+
+		public bool be(in R0 val)
+		{
+			return be(
+				val.ToImpl()
+			);
+		}
+
+		public bool be(in Real_onQuotient val)
+		{
+			return val>1;
 		}
 
 		static public GtOne Singleton

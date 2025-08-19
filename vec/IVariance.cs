@@ -1,6 +1,6 @@
-﻿namespace nilnul.num.real.vec
+namespace nilnul.num.real.vec
 {
-	public interface IVariance:real.str.IVariance
+	public interface IVariance:real.str.IPotence
 	{ }
 
 }

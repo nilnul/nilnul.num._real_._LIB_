@@ -10,4 +10,5 @@ namespace nilnul.num.real
 	{
 
 	}
+
 }

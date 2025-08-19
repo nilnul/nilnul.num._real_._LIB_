@@ -9,7 +9,11 @@ using nilnul.num.quotient.radix;
 namespace nilnul.num.real.be_
 {
 	public class Positive
-		: nilnul.num.real.BeI
+		:
+		nilnul.num.real.BeI
+		,
+		nilnul.num.real.BeI_onQuoient
+
 	{
 
 		[MayPerpetual]
@@ -36,6 +40,35 @@ namespace nilnul.num.real.be_
 				//
 				
 				real.Clamp1K();
+
+			}
+			//throw new NotImplementedException();
+		}
+
+		[MayPerpetual]
+		public bool be(in num.RealI_onQuotient real)
+		{
+			while (true)
+			{
+				if (
+					real.current.end<=0
+				)
+				{
+					return false;
+
+				}
+				if (
+					
+						real.current.begin>0
+					
+				)
+				{
+					return true;
+				}
+				// upper > 0, lower <=0
+				//
+				
+				real.CinchHalf();
 
 			}
 			//throw new NotImplementedException();

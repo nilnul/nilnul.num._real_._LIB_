@@ -1,13 +1,15 @@
-﻿namespace nilnul.num.real.stream.cumulus_
+namespace nilnul.num.real.stream.cumulus_
 {
-	public class CumulatorDefault4Dbl<TCumuls>
-		: Cumulus4dbl
-		where TCumuls:
-		real.of_.binary.Cumulator4dblI
+	public class CumulaDefault8Dbl<TCumula>
+		:
+		stream.Cumulus8dbl1
+
+		where TCumula:
+		real.bi.Cumula8dblI
 		//real.op_.binary.CumulatorI
 		,new()
 	{
-		public CumulatorDefault4Dbl(Stream4dblI val) : base(val,  nilnul.obj_.Singleton<TCumuls>.Instance)
+		public CumulaDefault8Dbl(Stream4dblI val) : base(val,  nilnul.obj_.Singleton<TCumula>.Instance)
 		{
 		}
 	}

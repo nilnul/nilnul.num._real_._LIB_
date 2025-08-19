@@ -1,4 +1,4 @@
-﻿using R = System.Double;
+using R = System.Double;
 
 namespace nilnul.num.real.stream_.slider
 {

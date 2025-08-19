@@ -5,11 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using nilnul.num._quotient.fraction.op;
 using nilnul.num.quotient.radix;
+using nilnul.num.real_;
 
 namespace nilnul.num.real.be_
 {
 	public class Nil
 		: nilnul.num.real.BeI
+		,
+		nilnul.num.real._be_.OnQuotientI
+		
+
 	{
 
 		[MayPerpetual]
@@ -67,6 +72,42 @@ namespace nilnul.num.real.be_
 			//throw new NotImplementedException();
 		}
 
+		public bool be(in RealI_onQuotient real)
+		{
+			while (true)
+			{
+				if (
+					real.current.end< 0
+				)
+				{
+					return false;
+
+				}
+				if (
+					
+					real.current.begin> 0
+					
+				)
+				{
+					return false;
+				}
+
+				/// upper >= 0, lower <=0
+				/// 
+
+				if (
+					nilnul.num.quotient.Eq2.Singleton.Equals(
+						real.current.end,real.current.begin
+					) 
+				)
+				{
+					return true;
+
+				}
+				real.CinchHalf();
+
+			}
+		}
 
 		static public Nil Singleton
 		{

@@ -11,6 +11,7 @@ namespace nilnul.num.real.be_
 	public class Nonnil
 		:
 		nilnul.num.real.BeDblI
+
 	{
 
 		public bool be(double real)

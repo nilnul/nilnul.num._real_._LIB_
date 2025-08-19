@@ -2,6 +2,6 @@
 
 namespace nilnul.num.real.bound_
 {
-	[Obsolete(nameof(IBoolish))]
-	public interface INormal:IBoolish { }
+	[Obsolete(nameof(IFuzzy))]
+	public interface INormal:IFuzzy { }
 }

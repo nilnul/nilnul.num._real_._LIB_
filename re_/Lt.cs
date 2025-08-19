@@ -11,15 +11,32 @@ using R = nilnul.num.RealI;
 namespace nilnul.num.real.re_
 {
 	public class Lt : ReI
+		,
+		real.ReI_onQuotient
 	{
 		public bool re(Real a, Real b) {
 			return				nilnul.num.real.be_.Negative.Singleton.be(a-b);
 		}
-		public bool re(R a, R b) {
-			return
-
-				re( Real.Ov(a), Real.Ov(b));
+		public bool re(Real_onQuotient a, RealI_onQuotient b) {
+			return	nilnul.num.real.be_.Negative.Singleton.be(a-b);
 		}
+
+		public bool re(RealI_onQuotient a, Real_onQuotient b) {
+			return	nilnul.num.real.be_.Negative.Singleton.be(a-b);
+		}
+		public bool re(Real_onQuotient a, Real_onQuotient b) {
+			return	nilnul.num.real.be_.Negative.Singleton.be(a-b);
+		}
+
+
+		public bool re(R0 a, R0 b) {
+			return	re( a.ToImpl(), b);
+		}
+
+		public bool re(R a, R b) {
+			return		re( Real.Ov(a), Real.Ov(b));
+		}
+
 
 		public bool be(Tuple<num.RealI, num.RealI> obj)
 		{
@@ -33,14 +50,15 @@ namespace nilnul.num.real.re_
 
 
 
-		static private Lazy<Lt> _Lazy = new Lazy<Lt>();
+
 		static public Lt Lazy
 		{
 			get
 			{
-				return _Lazy.Value;
+				return nilnul._obj.typ_.nilable_.unprimable_.singleton_.ByLazy<Lt>.Instance;
 			}
 		}
+
 
 
 		static public Lt Singleton
@@ -54,6 +72,14 @@ namespace nilnul.num.real.re_
 		public bool re(Real a, PositiveI b)
 		{
 			return nilnul.num.real.be_.Negative.Singleton.be(a - b.en.en);
+
+		}
+
+	
+
+		public bool re(Real_onQuotient a, quotient_.denomNonnil_.Positive b)
+		{
+			return nilnul.num.real.be_.Negative.Singleton.be(a - b.eeByRef);
 
 		}
 	}

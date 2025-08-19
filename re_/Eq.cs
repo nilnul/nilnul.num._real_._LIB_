@@ -58,14 +58,15 @@ namespace nilnul.num.real.re_
 			return obj.GetHashCode();
 		}
 
-		static private Lazy<Eq> _Lazy = new Lazy<Eq>();
+
 		static public Eq Lazy
 		{
 			get
 			{
-				return _Lazy.Value;
+				return nilnul._obj.typ_.nilable_.unprimable_.singleton_.ByLazy<Eq>.Instance;
 			}
 		}
+
 
 
 		static public Eq Singleton

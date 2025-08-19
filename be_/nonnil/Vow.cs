@@ -19,6 +19,8 @@ namespace nilnul.num.real.be_.nonnil
 
 	}
 
+
+
 	public class Vow_divByNilXpn : nilnul.num.real.be.Vow_xpn<be_.nil.Anto, DivideByZeroException>
 	{
 		public Vow_divByNilXpn()

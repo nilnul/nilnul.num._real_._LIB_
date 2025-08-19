@@ -1,4 +1,4 @@
-﻿namespace nilnul.num.real.op_
+namespace nilnul.num.real.op_
 {
 	public interface ITo:
 		real.IOp

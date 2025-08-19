@@ -10,6 +10,8 @@ namespace nilnul.num.real.be_
 {
 	public class Negative
 		: nilnul.num.real.BeI
+		,
+		BeI_onQuoient
 	{
 
 		[MayPerpetual]
@@ -40,6 +42,33 @@ namespace nilnul.num.real.be_
 			//throw new NotImplementedException();
 		}
 
+		[MayPerpetual]
+		public bool be(in num.RealI_onQuotient real)
+		{
+			while (true)
+			{
+				if (
+					real.current.begin>=0)
+				{
+					return false;
+
+				}
+				if (
+					
+						real.current.end<0
+					
+				)
+				{
+					return true;
+				}
+				///  lower <0,upper >= 0
+				///
+				
+				real.CinchHalf();
+
+			}
+			//throw new NotImplementedException();
+		}
 
 		static public Negative Singleton
 		{

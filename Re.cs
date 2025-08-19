@@ -12,4 +12,6 @@ namespace nilnul.num.real
 		:/*obj::*/nilnul.obj.ReI<R>
 	{
 	}
+
+
 }

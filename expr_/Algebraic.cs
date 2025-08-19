@@ -1,4 +1,4 @@
-﻿//using nilnul.num.real.expr_._algebraic.pows.prod._scaled;
+//using nilnul.num.real.expr_._algebraic.pows.prod._scaled;
 using nilnul.num.real.expr_._algebraic;
 using nilnul.num.real.expr_._algebraic.pows;
 using nilnul.num.real.expr_._algebraic.pows.prod;
@@ -17,8 +17,14 @@ namespace nilnul.num.real.expr_
 	/// <summary>
 	/// a sum of product. 
 	/// </summary>
+	///
+
+	[Obsolete(nameof(IPolynomial) + " is the preferred name")]
+
 	public class Algebraic
-		: AlgebraicI
+		:
+		AlgebraicI,
+		IPolynomial
 
 	{
 		private List<Scaled_powIndexPositive> _scaleds;

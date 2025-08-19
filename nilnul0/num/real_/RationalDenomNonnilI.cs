@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace nilnul.num.real_
+namespace nilnul.num
 {
 
 	
-	public interface RationalDenomNonnilI
+	public interface RealI_onQuotient
 		:_real_.current_.DenomNonnilI
 		,_real_.clamp_.DenomNonnilI
 	{

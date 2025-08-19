@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +11,7 @@ namespace nilnul.num.real.be_
 	/// <summary>
 	/// (-1,1), a miniature mapping of (-inf, inf)
 	/// </summary>
+	/// <see cref="nilnul.num.real.bound_.centered_.Open4dbl"/>
 	public class Miniature
 		:
 		BeA,

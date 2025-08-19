@@ -1,4 +1,4 @@
-﻿namespace nilnul.num.real.interval_
+namespace nilnul.num.real.interval_
 {
 	/// <summary>
 	/// every real number;
@@ -8,5 +8,6 @@
 	///		full
 	///		omega
 	///		all
-	public interface IAll{ }
+	///		borderless
+	public interface IAll:real.IInterval, real.borel_.IBorderless{ }
 }

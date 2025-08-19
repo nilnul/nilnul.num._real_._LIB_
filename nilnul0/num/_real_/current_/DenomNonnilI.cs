@@ -13,7 +13,8 @@ namespace nilnul.num._real_.current_
 	///
 	public interface DenomNonnilI
 	:
-		num.quotient_.denomNonnil.clasp.stream_._slider_.CurrentI  /*limit might be at the border even if the border is not closed. stipulate it be closed and we simplify the question to be intuitive.*/
+		num.quotient.clamp.stream_._slider_.CurrentI  /*limit might be at the border even if the border is not closed. stipulate it be closed and we simplify the question to be intuitive.*/
+
 	{
 		
 	}

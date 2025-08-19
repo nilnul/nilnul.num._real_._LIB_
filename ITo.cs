@@ -1,4 +1,4 @@
-﻿namespace nilnul.num.real
+namespace nilnul.num.real
 {
 	public interface ITo
 		:
@@ -8,6 +8,5 @@
 	{
 
 	}
-
 
 }

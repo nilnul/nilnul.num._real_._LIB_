@@ -26,7 +26,7 @@ namespace nilnul.num.real_.nonnil.op_.unary_._inverse
 	/// </remarks>
 	public class Ret1
 				:
-			nilnul.num.real_.nonnil._call_.Arg
+			nilnul.num.real_.nonnil._call.Arg
 			,
 			real_.NonnilI
 			,

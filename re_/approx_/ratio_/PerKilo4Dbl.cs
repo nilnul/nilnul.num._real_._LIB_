@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,9 +11,11 @@ namespace nilnul.num.real.re_.approx_.ratio_
 {
 	/// <summary>
 	/// </summary>
+	///
+	[Obsolete(nameof(Milli8dbl))]
 	public class PerKilo4Dbl 
 		:
-		re_.approx_.Ratio
+		re_.approx_.Ratio8dbl
 	{
 
 		public PerKilo4Dbl() : base(0.001)
@@ -31,4 +33,6 @@ namespace nilnul.num.real.re_.approx_.ratio_
 
 
 	}
+
+
 }

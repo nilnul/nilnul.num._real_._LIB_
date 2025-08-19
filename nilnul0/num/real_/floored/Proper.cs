@@ -29,6 +29,11 @@ namespace nilnul.num.real_.floored
 
 		static public double  Doub(double result) {
 
+			return result - Math.Floor(
+					result
+				);
+
+
 			var r = (
 				result - Math.Floor(
 					result

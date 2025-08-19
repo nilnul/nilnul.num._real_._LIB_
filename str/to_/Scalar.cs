@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,15 +7,19 @@ using R = nilnul.num.RealI;
 
 namespace nilnul.num.real.str.to_
 {
+	public interface IScala { }
 	public interface ScalarI
 		:nilnul.obj.str.to_.ScalarI<R>
+		,
+		IScala
 
 	{
 	}
 
 	public interface Scalar4dblI
 		:nilnul.obj.str.to_.ScalarI<double>
-
+		,
+		IScala
 	{
 	//	double toScalar(IEnumerable<double> str);
 	}

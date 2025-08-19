@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,9 +13,9 @@ namespace nilnul.num.real
 	///		range, which is closed, but has direction in that the end might be smaller than the begin.
 	///	<see cref="nilnul.geometry.linear.ITend"/>
 	public interface IBound
-		
 	{
 	}
+
 
 
 }

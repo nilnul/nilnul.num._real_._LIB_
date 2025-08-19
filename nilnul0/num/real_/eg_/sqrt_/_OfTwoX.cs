@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +9,10 @@ namespace nilnul.num.real_.eg_.sqrt_
 	static public class _OfTwoX
 	{
 		static public readonly double DBL = Math.Sqrt(2);
+
+		/// <summary>
+		/// inverse; also half;
+		/// </summary>
+		static public readonly double INVERSE8DBL = DBL/2;
 	}
 }

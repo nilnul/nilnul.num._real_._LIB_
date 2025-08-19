@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace nilnul.num.real.vec_
 {
+
 	/// <summary>
 	/// the norm is one
 	/// eg:
@@ -29,4 +30,7 @@ namespace nilnul.num.real.vec_
 	public interface IUnial:real.IVec
 	{
 	}
+
+
+
 }

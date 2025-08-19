@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace nilnul.num.real.expr_._polynomial.monomial.be_
+{
+	/// <summary>
+	/// the coef is not one.
+	/// </summary>
+	/// it cannot be nil either.
+	///
+	/// alias:
+	///		unPrimitive
+	///		
+	internal class IUnMonic
+	{
+	}
+}

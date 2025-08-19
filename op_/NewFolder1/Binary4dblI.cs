@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +7,7 @@ using R = nilnul.num.RealI;
 
 namespace nilnul.num.real.op_
 {
+	[Obsolete(nameof(num.real.Bi8dblI))]
 	public interface Binary4dblI:
 		nilnul.num.real.Op4dblI
 		//,

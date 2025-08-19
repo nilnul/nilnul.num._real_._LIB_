@@ -1,4 +1,4 @@
-﻿namespace nilnul.num.real.expr_
+namespace nilnul.num.real.expr_
 {
 	public interface VarI:
 
@@ -7,4 +7,5 @@
 		nilnul.obj.expr_.typed_.generi_.VarI< nilnul.num.RealI>
 	{
 	}
+
 }

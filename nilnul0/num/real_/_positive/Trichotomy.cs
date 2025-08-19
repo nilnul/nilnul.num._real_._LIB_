@@ -5,6 +5,7 @@ using System.Numerics;
 using System.Text;
 using nilnul.num.quotient.be_;
 using nilnul.num.quotient.border.duo.be_;
+using nilnul.num.real;
 using R = nilnul.num.RealI;
 
 namespace nilnul.num.real_._positive
@@ -21,14 +22,22 @@ namespace nilnul.num.real_._positive
 		/// 
 		static public void Void(this R real) {
 
-
 			while (real.current.lower.mark <= 0)
 			{
 				real.ClampHalf();
 
 			}
-
 		}
+
+		static public void CinchTillPositive(this RealI_onQuotient real) {
+
+			while (real.current.begin<= 0)
+			{
+				real.CinchHalf();
+
+			}
+		}
+
 
 		static public void Clamp4LowerPositive_assumePositive(this R real) {
 

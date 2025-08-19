@@ -8,7 +8,7 @@
 		:
 		//nilnul.obj.vow.Ee_ofIn
 		//,
-		IExt
+		IXt
 		,
 		nilnul.num.quotient_.radix.ext.errable_.ieee_._bin_.ErrableI
 

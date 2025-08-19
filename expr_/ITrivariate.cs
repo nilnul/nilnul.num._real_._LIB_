@@ -1,4 +1,5 @@
-﻿namespace nilnul.num.real.expr_
+namespace nilnul.num.real.expr_
 {
-	public interface ITrivariate { }
+	public interface ITrivariate :real.IExpr{ }
+
 }

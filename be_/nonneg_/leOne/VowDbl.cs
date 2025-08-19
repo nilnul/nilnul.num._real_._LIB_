@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace nilnul.num.real.be_.nonneg_.leOne
 {
-	public class VowDbl:nilnul.num.real.be.VowOfDouble<nonneg_.LeOne>
+	public class Vow4dbl : nilnul.num.real.be.VowOfDouble<nonneg_.LeOne>
 	{
 
 	}

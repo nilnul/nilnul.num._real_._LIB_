@@ -1,14 +1,15 @@
-﻿namespace nilnul.num.real.stream_.slider
+namespace nilnul.num.real.stream_.slider
 {
-	public class Series4dbl :
+	public class Series8dbl :
 
-		cumulus_.CumulatorDefault4Dbl< real.of_.binary.cumulator_.Sum4dbl>
+		cumulus_.cumulaUnis_.Sum8dbl	//.CumulaDefault8Dbl< real.bi_.add.Cumula8dbl>
 		,
 		Series4dblI
 	{
-		public Series4dbl(Slider4dblI val) : base(val)
+		public Series8dbl(Slider4dblI val) : base(val)
 		{
 		}
+
 	}
 
 

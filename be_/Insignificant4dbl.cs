@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +10,15 @@ using nilnul.num.real_.nonneg.be_;
 
 namespace nilnul.num.real.be_
 {
+
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <see cref="be_.AboutNil4Dbl"/>
+	/// alias:
+	///		insignificant
+	///			,where "sign" tinges with +-.
+	///		unimportant
 	public class Insignificant4dbl
 
 		:

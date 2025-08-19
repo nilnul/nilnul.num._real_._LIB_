@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +9,7 @@ namespace nilnul.num.real.vec.str.accumulate_
 	/// <summary>
 	/// as this is accumulate, hence the arity wouldnot change.
 	/// </summary>
+	/// <see cref="num.real.vecs.to_.ILinearCombinate"/>
 	static public class _LinearCombinateX
 	{
 

@@ -1,5 +1,8 @@
-﻿namespace nilnul.num.real.stream
+using System;
+
+namespace nilnul.num.real.stream
 {
+	[Obsolete()]
 	public class Cumulus_cumulatorDefault<TCumuls>
 		: Cumulus
 		where TCumuls: real.op_.binary.CumulatorI,new()

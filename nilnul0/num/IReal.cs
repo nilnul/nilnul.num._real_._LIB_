@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +9,12 @@ namespace nilnul.num
 	/// <summary>
 	/// the limit of <see cref=" nilnul.num.quotient.bound_.closed.stream_.nested_.ConvergedI"/>, which might not a quotient;
 	/// </summary>
+	/// 
+	/// <remarks>
+	/// In many optimization problems, simple,	approximate solutions are more useful than complex exact solutions.—Steve Wright
+	/// </remarks>
+	/// ams.org/notices/201301/rnoti-p50.pdf
+	/// 
 	/// alias:
 	///		quantity for num.real;
 	///	vs:
